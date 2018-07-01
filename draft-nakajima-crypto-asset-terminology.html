@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head profile="http://www.w3.org/2006/03/hcard http://dublincore.org/documents/2008/08/04/dc-html/">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+
+  <title>Terminology for Crypto Asset</title>
+
+  
+<style type="text/css">/*<![CDATA[*/
+
+body {
+  font: 16px "Helvetica Neue","Open Sans",Helvetica,Calibri,sans-serif;
+  color: #333;
+  font-size-adjust: 0.5;
+  line-height: 24px;
+  margin: 75px auto;
+  max-width: 624px;
+  padding: 0 5px;
+}
+
+.title, .filename, h1, h2, h3, h4, h5 {
+  font: 16px "Roboto Condensed","Helvetica Neue","Open Sans",Helvetica,Calibri,sans-serif;
+  font-size-adjust: 0.5;
+  font-weight: bold;
+  color: #333;
+  line-height: 100%;
+  margin: 0.8em 0 0.3em;
+}
+.title, #rfc\.title h1 { font-size: 32px; }
+h1, section h1, h2, section h2, section h3, nav h2 { font-size: 20px; }
+h3, section h4, h4, section h5 { font-size: 16px; }
+h1 a[href], h2 a[href], h3 a[href], h4 a[href] {
+  color: #333;
+}
+
+table {
+  margin-left: 0em;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+td {
+  border-top: 1px solid #ddd;
+  vertical-align: top;
+}
+tr:nth-child(2n+1) > td,
+tr:nth-child(2n+1) > th {
+  background-color: #f9f9f9;
+}
+td.reference {
+  max-width: 200px;
+  border-top: none;
+  padding-right: 1em;
+}
+.right {
+  text-align: right;
+}
+
+
+table.header, table#rfc\.headerblock {
+  width: 100%;
+}
+table.header td, table#rfc\.headerblock td {
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 0;
+}
+.filename {
+  display: block;
+  color: rgb(119, 119, 119);
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 100%;
+  margin: 10px 0 32px;
+}
+#rfc\.abstract+p, #rfc\.abstract p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+samp, tt, code, pre {
+  font: 15px Consolas, monospace;
+  font-size-adjust: none;
+}
+pre {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  overflow-x: auto;
+  padding: 5px;
+  margin: 5px;
+}
+.figure, caption {
+  font-style: italic;
+  margin: 0 1.5em;
+  text-align: left;
+}
+
+address {
+  margin: 16px 2px;
+  line-height: 20px;
+}
+.vcard {
+  font-style: normal;
+}
+.vcardline {
+  display: block;
+}
+.vcardline .fn, address b {
+  font-weight: normal;
+}
+.vcardline .hidden {
+  display: none;
+}
+
+dl {
+  margin-left: 1em;
+}
+dl.dl-horizontal: {
+  margin-left: 0;
+}
+dl > dt {
+  float: left;
+  margin-right: 1em;
+}
+dl.nohang > dt {
+  float: none;
+}
+dl > dd {
+  margin-bottom: .5em;
+}
+dl.compact > dd {
+  margin-bottom: 0em;
+}
+dl > dd > dl {
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+}
+ul.empty {
+  list-style-type: none;
+}
+ul.empty li {
+  margin-top: .5em;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+}
+hr.noprint {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+a[href] {
+  color: #2a6496;
+}
+a[href]:hover {
+  background-color: #eee;
+}
+
+ol, ul, li, p {
+  padding: 0;
+  margin: 0.5em 0 0.5em 2em;
+}
+li, p {
+  margin-left: 0;
+}
+address {
+  font-style: normal;
+}
+
+ul.toc ul {
+  margin: 0 0 0 2em;
+}
+ul.toc li {
+  list-style: none;
+  margin: 0;
+}
+
+@media screen and (min-width: 924px) {
+  body {
+    padding-right: 350px;
+  }
+  body>ul.toc, body>#rfc\.toc {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    right: calc(50vw - 500px);
+    width: 300px;
+    z-index: 1;
+    overflow: auto;
+    overscroll-behavior: contain;
+  }
+  body>#rfc\.toc {
+    top: 55px;
+  }
+  body>ul.toc {
+    top: 100px;
+  }
+
+  ul.toc {
+    margin: 0 0 0 4px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  ul.toc ul {
+    margin-left: 1.2em;
+  }
+}
+
+.github-fork-ribbon-wrapper {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  /* "Fork me on GitHub" CSS ribbon based on
+   * https://github.com/simonwhitaker/github-fork-ribbon-css
+   */
+  .github-fork-ribbon {
+    position: absolute;
+    padding: 2px 0;
+    background-color: #a00;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    font: 700 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    pointer-events: auto;
+
+    top: 38px;
+    right: -45px;
+
+    transform: rotate(45deg);
+  }
+
+  .github-fork-ribbon a[href],
+  .github-fork-ribbon a[href]:hover {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    width: 190px;
+    line-height: 18px;
+
+    display: inline-block;
+    padding: 2px 0;
+
+    border: 1.5px dotted #fff;
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .github-fork-ribbon-wrapper {
+    display: block;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    overflow: hidden;
+    top: 0; right: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .github-fork-ribbon-wrapper {
+    position: fixed;
+  }
+/*]]>*/</style>
+<meta name="viewport" content="initial-scale=1.0">
+
+
+  <link href="#rfc.toc" rel="Contents">
+<link href="#rfc.section.1" rel="Chapter" title="1 Introduction">
+<link href="#rfc.section.2" rel="Chapter" title="2 Conventions and Definitions">
+<link href="#rfc.section.3" rel="Chapter" title="3 Terms and Definitions">
+<link href="#rfc.section.4" rel="Chapter" title="4 Security Considerations">
+<link href="#rfc.section.5" rel="Chapter" title="5 IANA Considerations">
+<link href="#rfc.references" rel="Chapter" title="6 Normative References">
+<link href="#rfc.acknowledgments" rel="Chapter">
+<link href="#rfc.authors" rel="Chapter">
+
+
+  <meta name="generator" content="xml2rfc version 2.9.6 - https://tools.ietf.org/tools/xml2rfc" />
+  <link rel="schema.dct" href="http://purl.org/dc/terms/" />
+
+  <meta name="dct.creator" content="Nakajima, H., Kusunoki, M., Hida, K., and Y. Suga" />
+  <meta name="dct.identifier" content="urn:ietf:id:draft-nakajima-crypto-asset-terminology-latest" />
+  <meta name="dct.issued" scheme="ISO8601" content="2018-07-01" />
+  <meta name="dct.abstract" content="This document provides terminology used in crypto asset." />
+  <meta name="description" content="This document provides terminology used in crypto asset." />
+
+</head>
+
+<body>
+
+  <table class="header">
+    <tbody>
+    
+    	<tr>
+<td class="left">Network Working Group</td>
+<td class="right">H. Nakajima</td>
+</tr>
+<tr>
+<td class="left">Internet-Draft</td>
+<td class="right">Mercari R4D</td>
+</tr>
+<tr>
+<td class="left">Intended status: Informational</td>
+<td class="right">M. Kusunoki</td>
+</tr>
+<tr>
+<td class="left">Expires: January 2, 2019</td>
+<td class="right">JDD</td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="right">K. Hida</td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="right">JBA</td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="right">Y. Suga</td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="right">Advanced Security Div, IIJ</td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="right">July 01, 2018</td>
+</tr>
+
+    	
+    </tbody>
+  </table>
+
+  <p class="title">Terminology for Crypto Asset<br />
+  <span class="filename">draft-nakajima-crypto-asset-terminology-latest</span></p>
+  
+  <h1 id="rfc.abstract"><a href="#rfc.abstract">Abstract</a></h1>
+<p>This document provides terminology used in crypto asset.</p>
+<h1 id="rfc.status"><a href="#rfc.status">Status of This Memo</a></h1>
+<p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
+<p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at https://datatracker.ietf.org/drafts/current/.</p>
+<p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
+<p>This Internet-Draft will expire on January 2, 2019.</p>
+<h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
+<p>Copyright (c) 2018 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
+<p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
+
+  
+  <hr class="noprint" />
+  <h1 class="np" id="rfc.toc"><a href="#rfc.toc">Table of Contents</a></h1>
+  <ul class="toc">
+
+  	<li>1.   <a href="#rfc.section.1">Introduction</a>
+</li>
+<li>2.   <a href="#rfc.section.2">Conventions and Definitions</a>
+</li>
+<li>3.   <a href="#rfc.section.3">Terms and Definitions</a>
+</li>
+<li>4.   <a href="#rfc.section.4">Security Considerations</a>
+</li>
+<li>5.   <a href="#rfc.section.5">IANA Considerations</a>
+</li>
+<li>6.   <a href="#rfc.references">Normative References</a>
+</li>
+<li><a href="#rfc.acknowledgments">Acknowledgments</a>
+</li>
+<li><a href="#rfc.authors">Authors' Addresses</a>
+</li>
+
+
+  </ul>
+
+  <h1 id="rfc.section.1">
+<a href="#rfc.section.1">1.</a> <a href="#introduction" id="introduction">Introduction</a>
+</h1>
+<h1 id="rfc.section.2">
+<a href="#rfc.section.2">2.</a> <a href="#conventions-and-definitions" id="conventions-and-definitions">Conventions and Definitions</a>
+</h1>
+<p id="rfc.section.2.p.1">The key words &#8220;MUST&#8221;, &#8220;MUST NOT&#8221;, &#8220;REQUIRED&#8221;, &#8220;SHALL&#8221;, &#8220;SHALL NOT&#8221;, &#8220;SHOULD&#8221;, &#8220;SHOULD NOT&#8221;, &#8220;RECOMMENDED&#8221;, &#8220;NOT RECOMMENDED&#8221;, &#8220;MAY&#8221;, and &#8220;OPTIONAL&#8221; in this document are to be interpreted as described in BCP 14 <a href="#RFC2119" class="xref">[RFC2119]</a> <a href="#RFC8174" class="xref">[RFC8174]</a> when, and only when, they appear in all capitals, as shown here.</p>
+<h1 id="rfc.section.3">
+<a href="#rfc.section.3">3.</a> <a href="#terms-and-definitions" id="terms-and-definitions">Terms and Definitions</a>
+</h1>
+<p></p>
+
+<dl>
+<dt>address:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>asymmetric cryptography:</dt>
+<dd style="margin-left: 8">Refer 4949</dd>
+<dt>block:</dt>
+<dd style="margin-left: 8">A set of transactions on a blockchain which contains a cryptographic hash value of previous block.</dd>
+<dt>blockchain:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>confirmation:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>consensus:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>consortium chain:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>crypto assets:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>deterministric wallet:</dt>
+<dd style="margin-left: 8">see wallet</dd>
+<dt>digital signature:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>distributed ledger:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>double spending:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>fiat money:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>fork:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>genesis block:</dt>
+<dd style="margin-left: 8">An initial block on a blockchain. Genesis block may differ to distinguish chains.</dd>
+<dt>hash value:</dt>
+<dd style="margin-left: 8">Refer 4949</dd>
+<dt>hash rate:</dt>
+<dd style="margin-left: 8">
+<ol><li>Amount of a hash value which node is able to generate per unit of time (generally per second)</li></ol>
+<p> </p>
+</dd>
+<dt>hierarchy deterministic wallet:</dt>
+<dd style="margin-left: 8">see wallet</dd>
+<dt>mainchain:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>mining:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>miner:</dt>
+<dd style="margin-left: 8">see mining</dd>
+<dt>multi-signature:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>node:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>off-chain:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>on-chain:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>orphan block:</dt>
+<dd style="margin-left: 8">see block</dd>
+<dt>permissioned chain:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>permissionless chain:</dt>
+<dd style="margin-left: 8">see permissioned chain</dd>
+<dt>public chain:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>public key:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>private chain:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>private key:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>proof of importance:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>proof of stake:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>proof of work:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>reorganization:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>reward:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>sidechain:</dt>
+<dd style="margin-left: 8">see off-chain</dd>
+<dt>smart contract:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>soft fork:</dt>
+<dd style="margin-left: 8">see fork</dd>
+<dt>subchain:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>token:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>transaction:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>validation:</dt>
+<dd style="margin-left: 8">TBD</dd>
+<dt>validated:</dt>
+<dd style="margin-left: 8">see validation</dd>
+<dt>validator:</dt>
+<dd style="margin-left: 8">see validation</dd>
+<dt>wallet:</dt>
+<dd style="margin-left: 8">A set of key pair composed of public key and private key.</dd>
+</dl>
+<h1 id="rfc.section.4">
+<a href="#rfc.section.4">4.</a> <a href="#security-considerations" id="security-considerations">Security Considerations</a>
+</h1>
+<p id="rfc.section.4.p.1">This document defines terminology for crypto asset. Therefore, there is no security considerations.</p>
+<h1 id="rfc.section.5">
+<a href="#rfc.section.5">5.</a> <a href="#iana-considerations" id="iana-considerations">IANA Considerations</a>
+</h1>
+<p id="rfc.section.5.p.1">None.</p>
+<h1 id="rfc.references">
+<a href="#rfc.references">6.</a> Normative References</h1>
+<table><tbody>
+<tr>
+<td class="reference"><b id="RFC2119">[RFC2119]</b></td>
+<td class="top">
+<a>Bradner, S.</a>, "<a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>", BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC8174">[RFC8174]</b></td>
+<td class="top">
+<a>Leiba, B.</a>, "<a href="https://tools.ietf.org/html/rfc8174">Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</a>", BCP 14, RFC 8174, DOI 10.17487/RFC8174, May 2017.</td>
+</tr>
+</tbody></table>
+<h1 id="rfc.acknowledgments"><a href="#rfc.acknowledgments">Acknowledgments</a></h1>
+<p id="rfc.section.A.p.1">To be filled.</p>
+<h1 id="rfc.authors"><a href="#rfc.authors">Authors' Addresses</a></h1>
+<div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Hirotaka Nakajima</span> 
+	  <span class="n hidden">
+		<span class="family-name">Nakajima</span>
+	  </span>
+	</span>
+	<span class="org vcardline">Mercari, Inc. R4D</span>
+	<span class="adr">
+	  <span class="vcardline">Roppongi Hills Mori Tower 18F</span>
+<span class="vcardline">6-10-1 Roppongi</span>
+
+	  <span class="vcardline">
+		<span class="locality">Minato, Tokyo</span>,  
+		<span class="region"></span>
+		<span class="code">106-6118</span>
+	  </span>
+	  <span class="country-name vcardline">JAPAN</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:nunnun@mercari.com">nunnun@mercari.com</a></span>
+
+  </address>
+</div><div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Masanori Kusunoki</span> 
+	  <span class="n hidden">
+		<span class="family-name">Kusunoki</span>
+	  </span>
+	</span>
+	<span class="org vcardline">Japan Digital Design, Inc.</span>
+	<span class="adr">
+	  
+	  <span class="vcardline">
+		<span class="locality"></span> 
+		<span class="region"></span>
+		<span class="code"></span>
+	  </span>
+	  <span class="country-name vcardline"></span>
+	</span>
+	
+  </address>
+</div><div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Keiichi Hida</span> 
+	  <span class="n hidden">
+		<span class="family-name">Hida</span>
+	  </span>
+	</span>
+	<span class="org vcardline">Japan Blockchain Association</span>
+	<span class="adr">
+	  
+	  <span class="vcardline">
+		<span class="locality"></span> 
+		<span class="region"></span>
+		<span class="code"></span>
+	  </span>
+	  <span class="country-name vcardline"></span>
+	</span>
+	
+  </address>
+</div><div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Yuji Suga</span> 
+	  <span class="n hidden">
+		<span class="family-name">Suga</span>
+	  </span>
+	</span>
+	<span class="org vcardline">Advanced Security Division, Internet Initiative Japan Inc.</span>
+	<span class="adr">
+	  <span class="vcardline">Iidabashi Grand Bloom,</span>
+<span class="vcardline">2-10-2 Fujimi</span>
+
+	  <span class="vcardline">
+		<span class="locality">Chiyoda, Tokyo</span>,  
+		<span class="region"></span>
+		<span class="code">102-0071</span>
+	  </span>
+	  <span class="country-name vcardline">JAPAN</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:suga@iij.ad.jp">suga@iij.ad.jp</a></span>
+
+  </address>
+</div>
+
+</body>
+</html>
