@@ -52,7 +52,13 @@ normative:
   RFC2119:
 
 informative:
-
+  RFC4949:
+  MasteringBitcoinOnline:
+    title: "Mastering Bitcoin"
+    author:
+    - name: "Andreas M. Antonopoulos LLC"
+    date: 2018/03/15
+    target: https://github.com/bitcoinbook/bitcoinbook
 
 --- abstract
 
@@ -62,7 +68,8 @@ This document provides terminology used in crypto asset.
 
 # Introduction
 
-
+Our goal with this document is to improve our understanding on a set of terms which frequently used in documents which related to crypto asset.
+Mutual understanding about terminology may help to reach a consensus on issues we're trying to solve.
 
 # Conventions and Definitions
 
@@ -74,16 +81,21 @@ when, and only when, they appear in all capitals, as shown here.
 # Terms and Definitions
 
 address:
-: TBD
+: An identifier to represent a public key in a blockchain network.
 
 asymmetric cryptography:
-: Refer 4949
+: Defined in {{RFC4949}} as "A modern branch of cryptography (popularly known as
+  "public-key cryptography") in which the algorithms use a pair of keys (a
+    public key and a private key) and use a different component of the pair
+    for each of two counterpart cryptographic operations
+    (e.g., encryption and decryption, or signature creation and signature verification). "
 
 block:
 : A set of transactions on a blockchain which contains a cryptographic hash value of previous block.
 
 blockchain:
 : TBD
+<!-- : One of a method of distributed ledgers which confirms  -->
 
 confirmation:
 : TBD
@@ -98,46 +110,52 @@ crypto assets:
 : TBD
 
 deterministric wallet:
-: see wallet
+: See: wallet
 
 digital signature:
-: TBD
+: Defined in {{RFC4949}} as "A value computed with a cryptographic algorithm and
+associated with a data object in such a way that any recipient of
+the data can use the signature to verify the data's origin and
+integrity."
 
 distributed ledger:
 : TBD
 
 double spending:
-: TBD
+: Defined in {{MasteringBitcoinOnline}} as "result of successfully spending some money more than once."
 
 fiat money:
-: TBD
+: Currency which has been established by government or other authorities.
 
 fork:
-: TBD
+: Defined in {{MasteringBitcoinOnline}} as "Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the block chain. Typically occurs when two or more miners find blocks at nearly the same time."
 
 genesis block:
 : An initial block on a blockchain. Genesis block may differ to distinguish chains.
 
+hard fork:
+: See: fork
+
 hash value:
-: Refer 4949
+: Defined in {{RFC4949}} as "The output of a hash function.".
 
 hash rate:
-: 1. Amount of a hash value which node is able to generate per unit of time (generally per second)
+: Amount of a hash value which node is able to generate per unit of time (generally per second)
 
 hierarchy deterministic wallet:
-: see wallet
+: See: wallet
 
 mainchain:
 : TBD
 
 mining:
-: TBD
+: A process to append a received transaction to a block by validating a transaction with agreed consensus rules such as proof-of-work and proof-of-stake. Miner is a network node which contributes its resources to mining.
 
 miner:
-: see mining
+: See: mining
 
-multi-signature:
-: TBD
+multisignature:
+: Defined in {{MasteringBitcoinOnline}} as "requiring more than one key to authorize a bitcoin transaction". In this scope, transaction is not limited to bitcoin transaction.
 
 node:
 : TBD
@@ -149,40 +167,42 @@ on-chain:
 : TBD
 
 orphan block:
-: see block
+: Defined in {{MasteringBitcoinOnline}} as "Blocks whose parent block has not been processed by the local node, so they can’t be fully validated yet."
 
 permissioned chain:
 : TBD
 
 permissionless chain:
-: see permissioned chain
+: See: permissioned chain
 
 public chain:
 : TBD
 
 public key:
-: TBD
+: Defined in {{RFC4949}} as "The publicly disclosable component of a pair of
+      cryptographic keys used for asymmetric cryptography."
 
 private chain:
 : TBD
 
 private key:
-: TBD
+: Defined in {{RFC4949}} as "The secret component of a pair of cryptographic keys used
+      for asymmetric cryptography."
 
 proof of importance:
 : TBD
 
-proof of stake:
-: TBD
+proof-of-stake:
+: Defined in {{MasteringBitcoinOnline}} as "method by which a cryptocurrency blockchain network aims to achieve distributed consensus."
 
-proof of work:
-: TBD
+proof-of-work:
+: Defined in {{MasteringBitcoinOnline}} as "A piece of data that requires significant computation to find."
 
 reorganization:
 : TBD
 
 reward:
-: TBD
+: Value by the blockchain network which assigned to a miner who successfully validates a transaction. Rules may differ among blockchains and consensus rules.
 
 sidechain:
 : see off-chain
@@ -191,7 +211,7 @@ smart contract:
 : TBD
 
 soft fork:
-: see fork
+: See: fork
 
 subchain:
 : TBD
@@ -200,16 +220,16 @@ token:
 : TBD
 
 transaction:
-: TBD
+: Defined in {{MasteringBitcoinOnline}} as "More precisely, a transaction is a signed data structure expressing a transfer of value."
 
 validation:
 : TBD
 
 validated:
-: see validation
+: See: validation
 
 validator:
-: see validation
+: See: validation
 
 wallet:
 : A set of key pair composed of public key and private key.
@@ -227,4 +247,4 @@ None.
 # Acknowledgments
 {:numbered="false"}
 
-To be filled.
+To be filled
