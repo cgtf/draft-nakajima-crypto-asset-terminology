@@ -271,7 +271,7 @@ Internet-Draft          Crypto Asset Terminology               July 2018
 6.2.  Informative References
 
    [MasteringBitcoinOnline]
-              LLC, A., "Mastering Bitcoin", March 2018,
+              M., A., "Mastering Bitcoin", March 2018,
               <https://github.com/bitcoinbook/bitcoinbook>.
 
 
