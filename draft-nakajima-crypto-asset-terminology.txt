@@ -228,7 +228,7 @@ Internet-Draft          Crypto Asset Terminology               July 2018
 
 Acknowledgments
 
-   To be filled.
+   Comments
 
 Authors' Addresses
 
