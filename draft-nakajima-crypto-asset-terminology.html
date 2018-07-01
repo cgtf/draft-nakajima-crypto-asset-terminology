@@ -281,7 +281,9 @@ ul.toc li {
 <link href="#rfc.section.3" rel="Chapter" title="3 Terms and Definitions">
 <link href="#rfc.section.4" rel="Chapter" title="4 Security Considerations">
 <link href="#rfc.section.5" rel="Chapter" title="5 IANA Considerations">
-<link href="#rfc.references" rel="Chapter" title="6 Normative References">
+<link href="#rfc.references" rel="Chapter" title="6 References">
+<link href="#rfc.references.1" rel="Chapter" title="6.1 Normative References">
+<link href="#rfc.references.2" rel="Chapter" title="6.2 Informative References">
 <link href="#rfc.acknowledgments" rel="Chapter">
 <link href="#rfc.authors" rel="Chapter">
 
@@ -372,9 +374,13 @@ ul.toc li {
 </li>
 <li>5.   <a href="#rfc.section.5">IANA Considerations</a>
 </li>
-<li>6.   <a href="#rfc.references">Normative References</a>
+<li>6.   <a href="#rfc.references">References</a>
 </li>
-<li><a href="#rfc.acknowledgments">Acknowledgments</a>
+<ul><li>6.1.   <a href="#rfc.references.1">Normative References</a>
+</li>
+<li>6.2.   <a href="#rfc.references.2">Informative References</a>
+</li>
+</ul><li><a href="#rfc.acknowledgments">Acknowledgments</a>
 </li>
 <li><a href="#rfc.authors">Authors' Addresses</a>
 </li>
@@ -385,6 +391,7 @@ ul.toc li {
   <h1 id="rfc.section.1">
 <a href="#rfc.section.1">1.</a> <a href="#introduction" id="introduction">Introduction</a>
 </h1>
+<p id="rfc.section.1.p.1">Our goal with this document is to improve our understanding on a set of terms which frequently used in documents which related to crypto asset.  Mutual understanding about terminology may help to reach a consensus on issues we&#8217;re trying to solve.</p>
 <h1 id="rfc.section.2">
 <a href="#rfc.section.2">2.</a> <a href="#conventions-and-definitions" id="conventions-and-definitions">Conventions and Definitions</a>
 </h1>
@@ -396,13 +403,13 @@ ul.toc li {
 
 <dl>
 <dt>address:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">An identifier to represent a public key in a blockchain network.</dd>
 <dt>asymmetric cryptography:</dt>
-<dd style="margin-left: 8">Refer 4949</dd>
+<dd style="margin-left: 8">Defined in <a href="#RFC4949" class="xref">[RFC4949]</a> as &#8220;A modern branch of cryptography (popularly known as &#8220;public-key cryptography&#8221;) in which the algorithms use a pair of keys (a public key and a private key) and use a different component of the pair for each of two counterpart cryptographic operations (e.g., encryption and decryption, or signature creation and signature verification). &#8220;</dd>
 <dt>block:</dt>
 <dd style="margin-left: 8">A set of transactions on a blockchain which contains a cryptographic hash value of previous block.</dd>
 <dt>blockchain:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">TBD </dd>
 <dt>confirmation:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>consensus:</dt>
@@ -412,36 +419,35 @@ ul.toc li {
 <dt>crypto assets:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>deterministric wallet:</dt>
-<dd style="margin-left: 8">see wallet</dd>
+<dd style="margin-left: 8">See: wallet</dd>
 <dt>digital signature:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">Defined in <a href="#RFC4949" class="xref">[RFC4949]</a> as &#8220;A value computed with a cryptographic algorithm and associated with a data object in such a way that any recipient of the data can use the signature to verify the data&#8217;s origin and integrity.&#8221;</dd>
 <dt>distributed ledger:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>double spending:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">Defined in <a href="#MasteringBitcoinOnline" class="xref">[MasteringBitcoinOnline]</a> as &#8220;result of successfully spending some money more than once.&#8221;</dd>
 <dt>fiat money:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">Currency which has been established by government or other authorities.</dd>
 <dt>fork:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">Defined in <a href="#MasteringBitcoinOnline" class="xref">[MasteringBitcoinOnline]</a> as &#8220;Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the block chain. Typically occurs when two or more miners find blocks at nearly the same time.&#8221;</dd>
 <dt>genesis block:</dt>
 <dd style="margin-left: 8">An initial block on a blockchain. Genesis block may differ to distinguish chains.</dd>
+<dt>hard fork:</dt>
+<dd style="margin-left: 8">See: fork</dd>
 <dt>hash value:</dt>
-<dd style="margin-left: 8">Refer 4949</dd>
+<dd style="margin-left: 8">Defined in <a href="#RFC4949" class="xref">[RFC4949]</a> as &#8220;The output of a hash function.&#8221;.</dd>
 <dt>hash rate:</dt>
-<dd style="margin-left: 8">
-<ol><li>Amount of a hash value which node is able to generate per unit of time (generally per second)</li></ol>
-<p> </p>
-</dd>
+<dd style="margin-left: 8">Amount of a hash value which node is able to generate per unit of time (generally per second)</dd>
 <dt>hierarchy deterministic wallet:</dt>
-<dd style="margin-left: 8">see wallet</dd>
+<dd style="margin-left: 8">See: wallet</dd>
 <dt>mainchain:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>mining:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">A process to append a received transaction to a block by validating a transaction with agreed consensus rules such as proof-of-work and proof-of-stake. Miner is a network node which contributes its resources to mining.</dd>
 <dt>miner:</dt>
-<dd style="margin-left: 8">see mining</dd>
-<dt>multi-signature:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">See: mining</dd>
+<dt>multisignature:</dt>
+<dd style="margin-left: 8">Defined in <a href="#MasteringBitcoinOnline" class="xref">[MasteringBitcoinOnline]</a> as &#8220;requiring more than one key to authorize a bitcoin transaction&#8221;. In this scope, transaction is not limited to bitcoin transaction.</dd>
 <dt>node:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>off-chain:</dt>
@@ -449,47 +455,47 @@ ul.toc li {
 <dt>on-chain:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>orphan block:</dt>
-<dd style="margin-left: 8">see block</dd>
+<dd style="margin-left: 8">Defined in <a href="#MasteringBitcoinOnline" class="xref">[MasteringBitcoinOnline]</a> as &#8220;Blocks whose parent block has not been processed by the local node, so they can&#8217;t be fully validated yet.&#8221;</dd>
 <dt>permissioned chain:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>permissionless chain:</dt>
-<dd style="margin-left: 8">see permissioned chain</dd>
+<dd style="margin-left: 8">See: permissioned chain</dd>
 <dt>public chain:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>public key:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">Defined in <a href="#RFC4949" class="xref">[RFC4949]</a> as &#8220;The publicly disclosable component of a pair of cryptographic keys used for asymmetric cryptography.&#8221;</dd>
 <dt>private chain:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>private key:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">Defined in <a href="#RFC4949" class="xref">[RFC4949]</a> as &#8220;The secret component of a pair of cryptographic keys used for asymmetric cryptography.&#8221;</dd>
 <dt>proof of importance:</dt>
 <dd style="margin-left: 8">TBD</dd>
-<dt>proof of stake:</dt>
-<dd style="margin-left: 8">TBD</dd>
-<dt>proof of work:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dt>proof-of-stake:</dt>
+<dd style="margin-left: 8">Defined in <a href="#MasteringBitcoinOnline" class="xref">[MasteringBitcoinOnline]</a> as &#8220;method by which a cryptocurrency blockchain network aims to achieve distributed consensus.&#8221;</dd>
+<dt>proof-of-work:</dt>
+<dd style="margin-left: 8">Defined in <a href="#MasteringBitcoinOnline" class="xref">[MasteringBitcoinOnline]</a> as &#8220;A piece of data that requires significant computation to find.&#8221;</dd>
 <dt>reorganization:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>reward:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">Value by the blockchain network which assigned to a miner who successfully validates a transaction. Rules may differ among blockchains and consensus rules.</dd>
 <dt>sidechain:</dt>
 <dd style="margin-left: 8">see off-chain</dd>
 <dt>smart contract:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>soft fork:</dt>
-<dd style="margin-left: 8">see fork</dd>
+<dd style="margin-left: 8">See: fork</dd>
 <dt>subchain:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>token:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>transaction:</dt>
-<dd style="margin-left: 8">TBD</dd>
+<dd style="margin-left: 8">Defined in <a href="#MasteringBitcoinOnline" class="xref">[MasteringBitcoinOnline]</a> as &#8220;More precisely, a transaction is a signed data structure expressing a transfer of value.&#8221;</dd>
 <dt>validation:</dt>
 <dd style="margin-left: 8">TBD</dd>
 <dt>validated:</dt>
-<dd style="margin-left: 8">see validation</dd>
+<dd style="margin-left: 8">See: validation</dd>
 <dt>validator:</dt>
-<dd style="margin-left: 8">see validation</dd>
+<dd style="margin-left: 8">See: validation</dd>
 <dt>wallet:</dt>
 <dd style="margin-left: 8">A set of key pair composed of public key and private key.</dd>
 </dl>
@@ -502,7 +508,9 @@ ul.toc li {
 </h1>
 <p id="rfc.section.5.p.1">None.</p>
 <h1 id="rfc.references">
-<a href="#rfc.references">6.</a> Normative References</h1>
+<a href="#rfc.references">6.</a> References</h1>
+<h1 id="rfc.references.1">
+<a href="#rfc.references.1">6.1.</a> Normative References</h1>
 <table><tbody>
 <tr>
 <td class="reference"><b id="RFC2119">[RFC2119]</b></td>
@@ -515,8 +523,22 @@ ul.toc li {
 <a>Leiba, B.</a>, "<a href="https://tools.ietf.org/html/rfc8174">Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</a>", BCP 14, RFC 8174, DOI 10.17487/RFC8174, May 2017.</td>
 </tr>
 </tbody></table>
+<h1 id="rfc.references.2">
+<a href="#rfc.references.2">6.2.</a> Informative References</h1>
+<table><tbody>
+<tr>
+<td class="reference"><b id="MasteringBitcoinOnline">[MasteringBitcoinOnline]</b></td>
+<td class="top">
+<a>LLC, A.</a>, "<a href="https://github.com/bitcoinbook/bitcoinbook">Mastering Bitcoin</a>", March 2018.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC4949">[RFC4949]</b></td>
+<td class="top">
+<a>Shirey, R.</a>, "<a href="https://tools.ietf.org/html/rfc4949">Internet Security Glossary, Version 2</a>", FYI 36, RFC 4949, DOI 10.17487/RFC4949, August 2007.</td>
+</tr>
+</tbody></table>
 <h1 id="rfc.acknowledgments"><a href="#rfc.acknowledgments">Acknowledgments</a></h1>
-<p id="rfc.section.A.p.1">To be filled.</p>
+<p id="rfc.section.A.p.1">To be filled</p>
 <h1 id="rfc.authors"><a href="#rfc.authors">Authors' Addresses</a></h1>
 <div class="avoidbreak">
   <address class="vcard">

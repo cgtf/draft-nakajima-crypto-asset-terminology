@@ -66,13 +66,20 @@ Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
    2.  Conventions and Definitions . . . . . . . . . . . . . . . . .   2
    3.  Terms and Definitions . . . . . . . . . . . . . . . . . . . .   2
-   4.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
-   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
-   6.  Normative References  . . . . . . . . . . . . . . . . . . . .   4
-   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   5
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   5
+   4.  Security Considerations . . . . . . . . . . . . . . . . . . .   5
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   5
+   6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
+     6.1.  Normative References  . . . . . . . . . . . . . . . . . .   5
+     6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
+   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   6
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
 
 1.  Introduction
+
+   Our goal with this document is to improve our understanding on a set
+   of terms which frequently used in documents which related to crypto
+   asset.  Mutual understanding about terminology may help to reach a
+   consensus on issues we're trying to solve.
 
 2.  Conventions and Definitions
 
@@ -84,14 +91,28 @@ Table of Contents
 
 3.  Terms and Definitions
 
-   address:  TBD
+   address:  An identifier to represent a public key in a blockchain
+      network.
 
-   asymmetric cryptography:  Refer 4949
+   asymmetric cryptography:  Defined in [RFC4949] as "A modern branch of
+      cryptography (popularly known as "public-key cryptography") in
+      which the algorithms use a pair of keys (a public key and a
+      private key) and use a different component of the pair for each of
+      two counterpart cryptographic operations (e.g., encryption and
+      decryption, or signature creation and signature verification). "
 
    block:  A set of transactions on a blockchain which contains a
       cryptographic hash value of previous block.
 
    blockchain:  TBD
+
+
+
+
+Nakajima, et al.         Expires January 2, 2019                [Page 2]
+
+Internet-Draft          Crypto Asset Terminology               July 2018
+
 
    confirmation:  TBD
 
@@ -101,66 +122,45 @@ Table of Contents
 
    crypto assets:  TBD
 
-   deterministric wallet:  see wallet
+   deterministric wallet:  See: wallet
 
-   digital signature:  TBD
+   digital signature:  Defined in [RFC4949] as "A value computed with a
+      cryptographic algorithm and associated with a data object in such
+      a way that any recipient of the data can use the signature to
+      verify the data's origin and integrity."
 
    distributed ledger:  TBD
 
+   double spending:  Defined in [MasteringBitcoinOnline] as "result of
+      successfully spending some money more than once."
 
+   fiat money:  Currency which has been established by government or
+      other authorities.
 
-Nakajima, et al.         Expires January 2, 2019                [Page 2]
-
-Internet-Draft          Crypto Asset Terminology               July 2018
-
-
-   double spending:  TBD
-
-   fiat money:  TBD
-
-   fork:  TBD
+   fork:  Defined in [MasteringBitcoinOnline] as "Fork, also known as
+      accidental fork, occurs when two or more blocks have the same
+      block height, forking the block chain.  Typically occurs when two
+      or more miners find blocks at nearly the same time."
 
    genesis block:  An initial block on a blockchain.  Genesis block may
       differ to distinguish chains.
 
-   hash value:  Refer 4949
+   hard fork:  See: fork
 
-   hash rate:
+   hash value:  Defined in [RFC4949] as "The output of a hash
+      function.".
 
-      1.  Amount of a hash value which node is able to generate per unit
-          of time (generally per second)
+   hash rate:  Amount of a hash value which node is able to generate per
+      unit of time (generally per second)
 
-   hierarchy deterministic wallet:  see wallet
+   hierarchy deterministic wallet:  See: wallet
 
    mainchain:  TBD
 
-   mining:  TBD
-
-   miner:  see mining
-
-   multi-signature:  TBD
-
-   node:  TBD
-
-   off-chain:  TBD
-
-   on-chain:  TBD
-
-   orphan block:  see block
-
-   permissioned chain:  TBD
-
-   permissionless chain:  see permissioned chain
-
-   public chain:  TBD
-
-   public key:  TBD
-
-   private chain:  TBD
-
-   private key:  TBD
-
-   proof of importance:  TBD
+   mining:  A process to append a received transaction to a block by
+      validating a transaction with agreed consensus rules such as
+      proof-of-work and proof-of-stake.  Miner is a network node which
+      contributes its resources to mining.
 
 
 
@@ -170,31 +170,79 @@ Nakajima, et al.         Expires January 2, 2019                [Page 3]
 Internet-Draft          Crypto Asset Terminology               July 2018
 
 
-   proof of stake:  TBD
+   miner:  See: mining
 
-   proof of work:  TBD
+   multisignature:  Defined in [MasteringBitcoinOnline] as "requiring
+      more than one key to authorize a bitcoin transaction".  In this
+      scope, transaction is not limited to bitcoin transaction.
+
+   node:  TBD
+
+   off-chain:  TBD
+
+   on-chain:  TBD
+
+   orphan block:  Defined in [MasteringBitcoinOnline] as "Blocks whose
+      parent block has not been processed by the local node, so they
+      can't be fully validated yet."
+
+   permissioned chain:  TBD
+
+   permissionless chain:  See: permissioned chain
+
+   public chain:  TBD
+
+   public key:  Defined in [RFC4949] as "The publicly disclosable
+      component of a pair of cryptographic keys used for asymmetric
+      cryptography."
+
+   private chain:  TBD
+
+   private key:  Defined in [RFC4949] as "The secret component of a pair
+      of cryptographic keys used for asymmetric cryptography."
+
+   proof of importance:  TBD
+
+   proof-of-stake:  Defined in [MasteringBitcoinOnline] as "method by
+      which a cryptocurrency blockchain network aims to achieve
+      distributed consensus."
+
+   proof-of-work:  Defined in [MasteringBitcoinOnline] as "A piece of
+      data that requires significant computation to find."
 
    reorganization:  TBD
 
-   reward:  TBD
+   reward:  Value by the blockchain network which assigned to a miner
+      who successfully validates a transaction.  Rules may differ among
+      blockchains and consensus rules.
 
    sidechain:  see off-chain
 
+
+
+
+Nakajima, et al.         Expires January 2, 2019                [Page 4]
+
+Internet-Draft          Crypto Asset Terminology               July 2018
+
+
    smart contract:  TBD
 
-   soft fork:  see fork
+   soft fork:  See: fork
 
    subchain:  TBD
 
    token:  TBD
 
-   transaction:  TBD
+   transaction:  Defined in [MasteringBitcoinOnline] as "More precisely,
+      a transaction is a signed data structure expressing a transfer of
+      value."
 
    validation:  TBD
 
-   validated:  see validation
+   validated:  See: validation
 
-   validator:  see validation
+   validator:  See: validation
 
    wallet:  A set of key pair composed of public key and private key.
 
@@ -207,7 +255,9 @@ Internet-Draft          Crypto Asset Terminology               July 2018
 
    None.
 
-6.  Normative References
+6.  References
+
+6.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -218,17 +268,27 @@ Internet-Draft          Crypto Asset Terminology               July 2018
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/info/rfc8174>.
 
+6.2.  Informative References
+
+   [MasteringBitcoinOnline]
+              LLC, A., "Mastering Bitcoin", March 2018,
+              <https://github.com/bitcoinbook/bitcoinbook>.
 
 
 
-Nakajima, et al.         Expires January 2, 2019                [Page 4]
+
+Nakajima, et al.         Expires January 2, 2019                [Page 5]
 
 Internet-Draft          Crypto Asset Terminology               July 2018
 
 
+   [RFC4949]  Shirey, R., "Internet Security Glossary, Version 2",
+              FYI 36, RFC 4949, DOI 10.17487/RFC4949, August 2007,
+              <https://www.rfc-editor.org/info/rfc4949>.
+
 Acknowledgments
 
-   To be filled.
+   To be filled
 
 Authors' Addresses
 
@@ -273,8 +333,4 @@ Authors' Addresses
 
 
 
-
-
-
-
-Nakajima, et al.         Expires January 2, 2019                [Page 5]
+Nakajima, et al.         Expires January 2, 2019                [Page 6]
