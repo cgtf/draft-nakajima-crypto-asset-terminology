@@ -56,7 +56,7 @@ informative:
   MasteringBitcoinOnline:
     title: "Mastering Bitcoin"
     author:
-    - name: "Andreas M. Antonopoulos LLC"
+    - name: "Andreas M."
     date: 2018/03/15
     target: https://github.com/bitcoinbook/bitcoinbook
 
