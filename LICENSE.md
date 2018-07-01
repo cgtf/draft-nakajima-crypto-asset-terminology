@@ -1,4 +1,4 @@
 # License
 
 See the
-[guidelines for contributions](https://github.com/VCGTF/draft-nakajima-crypto-assets-terminology/blob/master/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/VCGTF/draft-nakajima-crypto-asset-terminology/blob/master/CONTRIBUTING.md).
