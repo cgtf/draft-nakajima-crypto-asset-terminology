@@ -163,11 +163,11 @@ multisignature:
 node:
 : TBD
 
-off-chain:
-: TBD
+off-chain transaction:
+: The movement of value outside of the blockchain
 
-on-chain:
-: TBD
+on-chain transaction:
+: The movement of value on the blockchain
 
 orphan block:
 : Defined in {{MasteringBitcoinOnline}} as "Blocks whose parent block has not been processed by the local node, so they can’t be fully validated yet."
