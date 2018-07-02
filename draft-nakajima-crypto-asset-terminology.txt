@@ -5,12 +5,12 @@
 Network Working Group                                        H. Nakajima
 Internet-Draft                                               Mercari R4D
 Intended status: Informational                               M. Kusunoki
-Expires: January 2, 2019                                             JDD
+Expires: January 3, 2019                                             JDD
                                                                  K. Hida
                                                                      JBA
                                                                  Y. Suga
                                               Advanced Security Div, IIJ
-                                                           July 01, 2018
+                                                           July 02, 2018
 
 
                       Terminology for Crypto Asset
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on January 2, 2019.
+   This Internet-Draft will expire on January 3, 2019.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Nakajima, et al.         Expires January 2, 2019                [Page 1]
+Nakajima, et al.         Expires January 3, 2019                [Page 1]
 
 Internet-Draft          Crypto Asset Terminology               July 2018
 
@@ -70,7 +70,7 @@ Table of Contents
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   5
    6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      6.1.  Normative References  . . . . . . . . . . . . . . . . . .   5
-     6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
+     6.2.  Informative References  . . . . . . . . . . . . . . . . .   6
    Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   6
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
 
@@ -104,23 +104,26 @@ Table of Contents
    block:  A set of transactions on a blockchain which contains a
       cryptographic hash value of previous block.
 
-   blockchain:  TBD
+   blockchain:  A digital ledger about transactions for crypto assets.
 
 
 
 
-Nakajima, et al.         Expires January 2, 2019                [Page 2]
+Nakajima, et al.         Expires January 3, 2019                [Page 2]
 
 Internet-Draft          Crypto Asset Terminology               July 2018
 
 
-   confirmation:  TBD
+   confirmation:  (For transactions,) checking correctness of a
+      transaction in the mainchain.
 
-   consensus:  TBD
+   consensus:  Coincidence the way of thinking.
 
-   consortium chain:  TBD
+   consortium chain:  In contrast with "permissioned chain", a public
+      blockchain that only speficied members can join the blockchain
+      network.
 
-   crypto assets:  TBD
+   crypto assets:  Cryptographically guaranteed value.
 
    deterministric wallet:  See: wallet
 
@@ -129,7 +132,8 @@ Internet-Draft          Crypto Asset Terminology               July 2018
       a way that any recipient of the data can use the signature to
       verify the data's origin and integrity."
 
-   distributed ledger:  TBD
+   distributed ledger:  A distributed database about crypto assets with
+      agreed processed.
 
    double spending:  Defined in [MasteringBitcoinOnline] as "result of
       successfully spending some money more than once."
@@ -155,20 +159,21 @@ Internet-Draft          Crypto Asset Terminology               July 2018
 
    hierarchy deterministic wallet:  See: wallet
 
-   mainchain:  TBD
+   mainchain:  In constract with "subchain", ***TBD
+
+
+
+
+
+Nakajima, et al.         Expires January 3, 2019                [Page 3]
+
+Internet-Draft          Crypto Asset Terminology               July 2018
+
 
    mining:  A process to append a received transaction to a block by
       validating a transaction with agreed consensus rules such as
       proof-of-work and proof-of-stake.  Miner is a network node which
       contributes its resources to mining.
-
-
-
-
-Nakajima, et al.         Expires January 2, 2019                [Page 3]
-
-Internet-Draft          Crypto Asset Terminology               July 2018
-
 
    miner:  See: mining
 
@@ -190,18 +195,21 @@ Internet-Draft          Crypto Asset Terminology               July 2018
 
    permissionless chain:  See: permissioned chain
 
-   public chain:  TBD
+   public chain:  An open blockchain that anyone can retreave all of
+      blocks and transactions without special privileges.
 
    public key:  Defined in [RFC4949] as "The publicly disclosable
       component of a pair of cryptographic keys used for asymmetric
       cryptography."
 
-   private chain:  TBD
+   private chain:  In contrast with "public chain", A closed blockchain
+      that only permissioned users can access blocks and make
+      transactions.
 
    private key:  Defined in [RFC4949] as "The secret component of a pair
       of cryptographic keys used for asymmetric cryptography."
 
-   proof of importance:  TBD
+   proof-of-importance:  A blockchain consensus mechanism that ***TBD
 
    proof-of-stake:  Defined in [MasteringBitcoinOnline] as "method by
       which a cryptocurrency blockchain network aims to achieve
@@ -210,7 +218,15 @@ Internet-Draft          Crypto Asset Terminology               July 2018
    proof-of-work:  Defined in [MasteringBitcoinOnline] as "A piece of
       data that requires significant computation to find."
 
-   reorganization:  TBD
+
+
+
+Nakajima, et al.         Expires January 3, 2019                [Page 4]
+
+Internet-Draft          Crypto Asset Terminology               July 2018
+
+
+   reorganization:  Invalidation process of branched blockchains.
 
    reward:  Value by the blockchain network which assigned to a miner
       who successfully validates a transaction.  Rules may differ among
@@ -218,27 +234,20 @@ Internet-Draft          Crypto Asset Terminology               July 2018
 
    sidechain:  see off-chain
 
-
-
-
-Nakajima, et al.         Expires January 2, 2019                [Page 4]
-
-Internet-Draft          Crypto Asset Terminology               July 2018
-
-
-   smart contract:  TBD
+   smart contract:  A guaranteed digital procedure that usually stored
+      in a blockchain as a transaction.
 
    soft fork:  See: fork
 
    subchain:  TBD
 
-   token:  TBD
+   token:  An unforgeable data object.
 
    transaction:  Defined in [MasteringBitcoinOnline] as "More precisely,
       a transaction is a signed data structure expressing a transfer of
       value."
 
-   validation:  TBD
+   validation:  Checking correctness of given data structures.
 
    validated:  See: validation
 
@@ -264,6 +273,15 @@ Internet-Draft          Crypto Asset Terminology               July 2018
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
+
+
+
+
+Nakajima, et al.         Expires January 3, 2019                [Page 5]
+
+Internet-Draft          Crypto Asset Terminology               July 2018
+
+
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/info/rfc8174>.
@@ -273,14 +291,6 @@ Internet-Draft          Crypto Asset Terminology               July 2018
    [MasteringBitcoinOnline]
               Antonopoulos, A., "Mastering Bitcoin", March 2018,
               <https://github.com/bitcoinbook/bitcoinbook>.
-
-
-
-
-Nakajima, et al.         Expires January 2, 2019                [Page 5]
-
-Internet-Draft          Crypto Asset Terminology               July 2018
-
 
    [RFC4949]  Shirey, R., "Internet Security Glossary, Version 2",
               FYI 36, RFC 4949, DOI 10.17487/RFC4949, August 2007,
@@ -323,14 +333,4 @@ Authors' Addresses
 
 
 
-
-
-
-
-
-
-
-
-
-
-Nakajima, et al.         Expires January 2, 2019                [Page 6]
+Nakajima, et al.         Expires January 3, 2019                [Page 6]
