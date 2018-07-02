@@ -71,7 +71,7 @@ Table of Contents
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   5
    6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      6.1.  Normative References  . . . . . . . . . . . . . . . . . .   5
-     6.2.  Informative References  . . . . . . . . . . . . . . . . .   6
+     6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
    Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   6
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
 
@@ -102,10 +102,10 @@ Table of Contents
       two counterpart cryptographic operations (e.g., encryption and
       decryption, or signature creation and signature verification). "
 
-   block:  A set of transactions on a blockchain which contains a
-      cryptographic hash value of previous block.
+   block:  A basic unit of the blockchain.  A set of transactions on a
+      blockchain which contains a cryptographic hash value of previous
+      block.
 
-   blockchain:  A digital ledger about transactions for crypto assets.
 
 
 
@@ -114,18 +114,16 @@ Nakajima, et al.         Expires January 3, 2019                [Page 2]
 Internet-Draft          Crypto Asset Terminology               July 2018
 
 
+   blockchain:  A digital ledger about transactions for crypto assets.
+
    confirmation:  (For transactions,) checking correctness of a
       transaction in the mainchain.
 
    consensus:  Coincidence the way of thinking.
 
-   consortium chain:  In contrast with "permissioned chain", a public
-      blockchain that only speficied members can join the blockchain
-      network.
-
    crypto assets:  Cryptographically guaranteed value.
 
-   deterministric wallet:  See: wallet
+   deterministic wallet:  See: wallet
 
    digital signature:  Defined in [RFC4949] as "A value computed with a
       cryptographic algorithm and associated with a data object in such
@@ -151,24 +149,12 @@ Internet-Draft          Crypto Asset Terminology               July 2018
 
    hard fork:  See: fork
 
-   hash value:  Defined in [RFC4949] as "The output of a hash
-      function.".
+   hash value:  Defined in [RFC4949] as "The output of a hash function."
 
    hash rate:  Amount of a hash value which node is able to generate per
       unit of time (generally per second)
 
    hierarchy deterministic wallet:  See: wallet
-
-   mainchain:  In constract with "subchain", ***TBD
-
-
-
-
-
-Nakajima, et al.         Expires January 3, 2019                [Page 3]
-
-Internet-Draft          Crypto Asset Terminology               July 2018
-
 
    mining:  A process to append a received transaction to a block by
       validating a transaction with agreed consensus rules such as
@@ -177,11 +163,18 @@ Internet-Draft          Crypto Asset Terminology               July 2018
 
    miner:  See: mining
 
+
+
+Nakajima, et al.         Expires January 3, 2019                [Page 3]
+
+Internet-Draft          Crypto Asset Terminology               July 2018
+
+
    multisignature:  Defined in [MasteringBitcoinOnline] as "requiring
       more than one key to authorize a bitcoin transaction".  In this
       scope, transaction is not limited to bitcoin transaction.
 
-   node:  TBD
+   node:  A device that connects to blockchain network.
 
    off-chain transaction:  The movement of value outside of the
       blockchain
@@ -192,25 +185,24 @@ Internet-Draft          Crypto Asset Terminology               July 2018
       parent block has not been processed by the local node, so they
       can't be fully validated yet."
 
-   permissioned chain:  TBD
+   permissioned-chain:  A public blockchain that only specified members
+      can join the blockchain network.
 
-   permissionless chain:  See: permissioned chain
+   permissionless-chain:  See: permissioned-chain
 
-   public chain:  An open blockchain that anyone can retreave all of
+   public-chain:  An open blockchain that anyone can retrieve all of
       blocks and transactions without special privileges.
 
    public key:  Defined in [RFC4949] as "The publicly disclosable
       component of a pair of cryptographic keys used for asymmetric
       cryptography."
 
-   private chain:  In contrast with "public chain", A closed blockchain
+   private-chain:  In contrast with "public-chain", A closed blockchain
       that only permissioned users can access blocks and make
       transactions.
 
    private key:  Defined in [RFC4949] as "The secret component of a pair
       of cryptographic keys used for asymmetric cryptography."
-
-   proof-of-importance:  A blockchain consensus mechanism that ***TBD
 
    proof-of-stake:  Defined in [MasteringBitcoinOnline] as "method by
       which a cryptocurrency blockchain network aims to achieve
@@ -219,6 +211,14 @@ Internet-Draft          Crypto Asset Terminology               July 2018
    proof-of-work:  Defined in [MasteringBitcoinOnline] as "A piece of
       data that requires significant computation to find."
 
+   reorganization:  Invalidation process of branched blockchains.
+
+   reward:  Value by the blockchain network which assigned to a miner
+      who successfully validates a transaction.  Rules may differ among
+      blockchains and consensus rules.
+
+   side-chain:  See off-chain
+
 
 
 Nakajima, et al.         Expires January 3, 2019                [Page 4]
@@ -226,20 +226,10 @@ Nakajima, et al.         Expires January 3, 2019                [Page 4]
 Internet-Draft          Crypto Asset Terminology               July 2018
 
 
-   reorganization:  Invalidation process of branched blockchains.
-
-   reward:  Value by the blockchain network which assigned to a miner
-      who successfully validates a transaction.  Rules may differ among
-      blockchains and consensus rules.
-
-   sidechain:  see off-chain
-
-   smart contract:  A guaranteed digital procedure that usually stored
-      in a blockchain as a transaction.
+   smart contract:  A guaranteed digital procedure that automatically
+      enforced on a blockchain network.
 
    soft fork:  See: fork
-
-   subchain:  TBD
 
    token:  An unforgeable data object.
 
@@ -247,7 +237,7 @@ Internet-Draft          Crypto Asset Terminology               July 2018
       a transaction is a signed data structure expressing a transfer of
       value."
 
-   validation:  Checking correctness of given data structures.
+   validation:  Checking correctness and consistency of given data.
 
    validated:  See: validation
 
@@ -273,15 +263,6 @@ Internet-Draft          Crypto Asset Terminology               July 2018
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
-
-
-
-
-Nakajima, et al.         Expires January 3, 2019                [Page 5]
-
-Internet-Draft          Crypto Asset Terminology               July 2018
-
-
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/info/rfc8174>.
@@ -292,13 +273,23 @@ Internet-Draft          Crypto Asset Terminology               July 2018
               Antonopoulos, A., "Mastering Bitcoin", March 2018,
               <https://github.com/bitcoinbook/bitcoinbook>.
 
+
+
+
+
+Nakajima, et al.         Expires January 3, 2019                [Page 5]
+
+Internet-Draft          Crypto Asset Terminology               July 2018
+
+
    [RFC4949]  Shirey, R., "Internet Security Glossary, Version 2",
               FYI 36, RFC 4949, DOI 10.17487/RFC4949, August 2007,
               <https://www.rfc-editor.org/info/rfc4949>.
 
 Acknowledgments
 
-   To be filled
+   Thanks to members of the Virtual Currency Governance Task Force for
+   help and feedback.
 
 Authors' Addresses
 
@@ -324,20 +315,6 @@ Authors' Addresses
    Email: hida@jba-web.jp
 
 
-
-
-
-
-
-
-
-
-
-Nakajima, et al.         Expires January 3, 2019                [Page 6]
-
-Internet-Draft          Crypto Asset Terminology               July 2018
-
-
    Yuji Suga
    Advanced Security Division, Internet Initiative Japan Inc.
    Iidabashi Grand Bloom,
@@ -356,37 +333,4 @@ Internet-Draft          Crypto Asset Terminology               July 2018
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Nakajima, et al.         Expires January 3, 2019                [Page 7]
+Nakajima, et al.         Expires January 3, 2019                [Page 6]
