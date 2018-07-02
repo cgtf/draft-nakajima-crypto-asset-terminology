@@ -94,20 +94,21 @@ block:
 : A set of transactions on a blockchain which contains a cryptographic hash value of previous block.
 
 blockchain:
-: TBD
+: A digital ledger about transactions for crypto assets.
 <!-- : One of a method of distributed ledgers which confirms  -->
 
 confirmation:
-: TBD
+: (For transactions,) checking correctness of a transaction in the mainchain.
 
 consensus:
-: TBD
+: Coincidence the way of thinking.
 
 consortium chain:
-: TBD
+: In contrast with "permissioned chain", a public blockchain that only speficied members can join the blockchain network.
+<!-- 加入のために登録を必要とする -->
 
 crypto assets:
-: TBD
+: Cryptographically guaranteed value.
 
 deterministric wallet:
 : See: wallet
@@ -119,7 +120,8 @@ the data can use the signature to verify the data's origin and
 integrity."
 
 distributed ledger:
-: TBD
+: A distributed database about crypto assets with agreed processed.
+<!-- ある方法でコンセンサスを得たバリューの分散データベース -->
 
 double spending:
 : Defined in {{MasteringBitcoinOnline}} as "result of successfully spending some money more than once."
@@ -129,6 +131,7 @@ fiat money:
 
 fork:
 : Defined in {{MasteringBitcoinOnline}} as "Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the block chain. Typically occurs when two or more miners find blocks at nearly the same time."
+<!-- NEED MODIFICATIONS for explanation of hard fork -->
 
 genesis block:
 : An initial block on a blockchain. Genesis block may differ to distinguish chains.
@@ -146,7 +149,7 @@ hierarchy deterministic wallet:
 : See: wallet
 
 mainchain:
-: TBD
+: In constract with "subchain", ***TBD
 
 mining:
 : A process to append a received transaction to a block by validating a transaction with agreed consensus rules such as proof-of-work and proof-of-stake. Miner is a network node which contributes its resources to mining.
@@ -171,26 +174,28 @@ orphan block:
 
 permissioned chain:
 : TBD
+<!-- VERY SIMILLAR TERM? to consortium chain-->
 
 permissionless chain:
 : See: permissioned chain
 
 public chain:
-: TBD
+: An open blockchain that anyone can retreave all of blocks and transactions without special privileges.
 
 public key:
 : Defined in {{RFC4949}} as "The publicly disclosable component of a pair of
       cryptographic keys used for asymmetric cryptography."
 
 private chain:
-: TBD
+: In contrast with "public chain", A closed blockchain that only permissioned users can access blocks and make transactions.
 
 private key:
 : Defined in {{RFC4949}} as "The secret component of a pair of cryptographic keys used
       for asymmetric cryptography."
 
-proof of importance:
-: TBD
+proof-of-importance:
+: A blockchain consensus mechanism that ***TBD
+<!-- https://nem.io/wp-content/themes/nem/files/NEM_techRef.pdf -->
 
 proof-of-stake:
 : Defined in {{MasteringBitcoinOnline}} as "method by which a cryptocurrency blockchain network aims to achieve distributed consensus."
@@ -199,7 +204,7 @@ proof-of-work:
 : Defined in {{MasteringBitcoinOnline}} as "A piece of data that requires significant computation to find."
 
 reorganization:
-: TBD
+: Invalidation process of branched blockchains.
 
 reward:
 : Value by the blockchain network which assigned to a miner who successfully validates a transaction. Rules may differ among blockchains and consensus rules.
@@ -208,22 +213,24 @@ sidechain:
 : see off-chain
 
 smart contract:
-: TBD
+: A guaranteed digital procedure that usually stored in a blockchain as a transaction.
 
 soft fork:
 : See: fork
 
 subchain:
 : TBD
+<!-- difference? of "sidechain" -->
 
 token:
-: TBD
+: An unforgeable data object.
 
 transaction:
 : Defined in {{MasteringBitcoinOnline}} as "More precisely, a transaction is a signed data structure expressing a transfer of value."
 
 validation:
-: TBD
+: Checking correctness of given data structures.
+<!-- NEED MORE EXPLANATIONS for validated/validator -->
 
 validated:
 : See: validation
