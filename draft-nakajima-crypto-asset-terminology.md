@@ -30,11 +30,13 @@ author:
    name: Masanori Kusunoki
    organization: Japan Digital Design, Inc.
    abbrev: JDD
+   email: masanori.kusunoki@japan-d2.com
 -
    ins: K. Hida
    name: Keiichi Hida
    organization: Japan Blockchain Association
    abbrev: JBA
+   email: hida@jba-web.jp
 -
   ins: Y. Suga
   name: Yuji Suga
@@ -47,6 +49,12 @@ author:
   code: '102-0071'
   country: JAPAN
   email: suga@iij.ad.jp
+-
+  ins: T. Hayashi
+  name: Tatsuya HAYASHI
+  organization: Lepidum Co. Ltd.
+  abbrev: Lepidum
+  email: hayashi@lepidum.co.jp
 
 normative:
   RFC2119:
