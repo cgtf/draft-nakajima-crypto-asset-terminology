@@ -99,7 +99,7 @@ asymmetric cryptography:
     (e.g., encryption and decryption, or signature creation and signature verification). "
 
 block:
-: A set of transactions on a blockchain which contains a cryptographic hash value of previous block.
+: A basic unit of the blockchain. A set of transactions on a blockchain which contains a cryptographic hash value of previous block.
 
 blockchain:
 : A digital ledger about transactions for crypto assets.
@@ -111,14 +111,10 @@ confirmation:
 consensus:
 : Coincidence the way of thinking.
 
-consortium chain:
-: In contrast with "permissioned chain", a public blockchain that only speficied members can join the blockchain network.
-<!-- 加入のために登録を必要とする -->
-
 crypto assets:
 : Cryptographically guaranteed value.
 
-deterministric wallet:
+deterministic wallet:
 : See: wallet
 
 digital signature:
@@ -129,7 +125,6 @@ integrity."
 
 distributed ledger:
 : A distributed database about crypto assets with agreed processed.
-<!-- ある方法でコンセンサスを得たバリューの分散データベース -->
 
 double spending:
 : Defined in {{MasteringBitcoinOnline}} as "result of successfully spending some money more than once."
@@ -148,7 +143,7 @@ hard fork:
 : See: fork
 
 hash value:
-: Defined in {{RFC4949}} as "The output of a hash function.".
+: Defined in {{RFC4949}} as "The output of a hash function."
 
 hash rate:
 : Amount of a hash value which node is able to generate per unit of time (generally per second)
@@ -156,8 +151,8 @@ hash rate:
 hierarchy deterministic wallet:
 : See: wallet
 
-mainchain:
-: In constract with "subchain", ***TBD
+<!-- main-chain:
+: In contract with "subchain", ***TBD -->
 
 mining:
 : A process to append a received transaction to a block by validating a transaction with agreed consensus rules such as proof-of-work and proof-of-stake. Miner is a network node which contributes its resources to mining.
@@ -169,7 +164,7 @@ multisignature:
 : Defined in {{MasteringBitcoinOnline}} as "requiring more than one key to authorize a bitcoin transaction". In this scope, transaction is not limited to bitcoin transaction.
 
 node:
-: TBD
+: A device that connects to blockchain network.
 
 off-chain transaction:
 : The movement of value outside of the blockchain
@@ -180,30 +175,29 @@ on-chain transaction:
 orphan block:
 : Defined in {{MasteringBitcoinOnline}} as "Blocks whose parent block has not been processed by the local node, so they can’t be fully validated yet."
 
-permissioned chain:
-: TBD
-<!-- VERY SIMILLAR TERM? to consortium chain-->
+permissioned-chain:
+: A public blockchain that only specified members can join the blockchain network.
 
-permissionless chain:
-: See: permissioned chain
+permissionless-chain:
+: See: permissioned-chain
 
-public chain:
-: An open blockchain that anyone can retreave all of blocks and transactions without special privileges.
+public-chain:
+: An open blockchain that anyone can retrieve all of blocks and transactions without special privileges.
 
 public key:
 : Defined in {{RFC4949}} as "The publicly disclosable component of a pair of
       cryptographic keys used for asymmetric cryptography."
 
-private chain:
-: In contrast with "public chain", A closed blockchain that only permissioned users can access blocks and make transactions.
+private-chain:
+: In contrast with "public-chain", A closed blockchain that only permissioned users can access blocks and make transactions.
 
 private key:
 : Defined in {{RFC4949}} as "The secret component of a pair of cryptographic keys used
       for asymmetric cryptography."
 
-proof-of-importance:
-: A blockchain consensus mechanism that ***TBD
-<!-- https://nem.io/wp-content/themes/nem/files/NEM_techRef.pdf -->
+<!-- proof-of-importance:
+: A blockchain consensus mechanism that ***
+https://nem.io/wp-content/themes/nem/files/NEM_techRef.pdf -->
 
 proof-of-stake:
 : Defined in {{MasteringBitcoinOnline}} as "method by which a cryptocurrency blockchain network aims to achieve distributed consensus."
@@ -217,18 +211,18 @@ reorganization:
 reward:
 : Value by the blockchain network which assigned to a miner who successfully validates a transaction. Rules may differ among blockchains and consensus rules.
 
-sidechain:
-: see off-chain
+side-chain:
+: See off-chain
 
 smart contract:
-: A guaranteed digital procedure that usually stored in a blockchain as a transaction.
+: A guaranteed digital procedure that automatically enforced on a blockchain network.
 
 soft fork:
 : See: fork
 
-subchain:
+<!-- sub-chain:
 : TBD
-<!-- difference? of "sidechain" -->
+difference? of "sidechain" -->
 
 token:
 : An unforgeable data object.
@@ -237,7 +231,7 @@ transaction:
 : Defined in {{MasteringBitcoinOnline}} as "More precisely, a transaction is a signed data structure expressing a transfer of value."
 
 validation:
-: Checking correctness of given data structures.
+: Checking correctness and consistency of given data.
 <!-- NEED MORE EXPLANATIONS for validated/validator -->
 
 validated:
@@ -262,4 +256,4 @@ None.
 # Acknowledgments
 {:numbered="false"}
 
-To be filled
+Thanks to members of the Virtual Currency Governance Task Force for help and feedback.
