@@ -71,7 +71,7 @@ Table of Contents
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   5
    6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      6.1.  Normative References  . . . . . . . . . . . . . . . . . .   5
-     6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
+     6.2.  Informative References  . . . . . . . . . . . . . . . . .   6
    Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   6
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
 
@@ -144,6 +144,13 @@ Internet-Draft          Crypto Asset Terminology               July 2018
       block height, forking the block chain.  Typically occurs when two
       or more miners find blocks at nearly the same time."
 
+      Design change of Block data format.  "Soft-fork" affect mining
+      software implementation.  "Hard-fork" affect not only mining
+      software but also wallet software implementation.  Split is
+      sometimes called hard-fork, but Blockchain before specification
+      change and Blockchain after specification change coexist in the
+      future.
+
    genesis block:  An initial block on a blockchain.  Genesis block may
       differ to distinguish chains.
 
@@ -156,19 +163,19 @@ Internet-Draft          Crypto Asset Terminology               July 2018
 
    hierarchy deterministic wallet:  See: wallet
 
-   mining:  A process to append a received transaction to a block by
-      validating a transaction with agreed consensus rules such as
-      proof-of-work and proof-of-stake.  Miner is a network node which
-      contributes its resources to mining.
-
-   miner:  See: mining
-
 
 
 Nakajima, et al.         Expires January 5, 2019                [Page 3]
 
 Internet-Draft          Crypto Asset Terminology               July 2018
 
+
+   mining:  A process to append a received transaction to a block by
+      validating a transaction with agreed consensus rules such as
+      proof-of-work and proof-of-stake.  Miner is a network node which
+      contributes its resources to mining.
+
+   miner:  See: mining
 
    multisignature:  Defined in [MasteringBitcoinOnline] as "requiring
       more than one key to authorize a bitcoin transaction".  In this
@@ -211,13 +218,6 @@ Internet-Draft          Crypto Asset Terminology               July 2018
    proof-of-work:  Defined in [MasteringBitcoinOnline] as "A piece of
       data that requires significant computation to find."
 
-   reorganization:  Invalidation process of branched blockchains.
-
-   reward:  Value by the blockchain network which assigned to a miner
-      who successfully validates a transaction.  Rules may differ among
-      blockchains and consensus rules.
-
-   side-chain:  See off-chain
 
 
 
@@ -225,6 +225,14 @@ Nakajima, et al.         Expires January 5, 2019                [Page 4]
 
 Internet-Draft          Crypto Asset Terminology               July 2018
 
+
+   reorganization:  Invalidation process of branched blockchains.
+
+   reward:  Value by the blockchain network which assigned to a miner
+      who successfully validates a transaction.  Rules may differ among
+      blockchains and consensus rules.
+
+   side-chain:  See off-chain
 
    smart contract:  A guaranteed digital procedure that automatically
       enforced on a blockchain network.
@@ -267,20 +275,18 @@ Internet-Draft          Crypto Asset Terminology               July 2018
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/info/rfc8174>.
 
-6.2.  Informative References
-
-   [MasteringBitcoinOnline]
-              Antonopoulos, A., "Mastering Bitcoin", March 2018,
-              <https://github.com/bitcoinbook/bitcoinbook>.
-
-
-
 
 
 Nakajima, et al.         Expires January 5, 2019                [Page 5]
 
 Internet-Draft          Crypto Asset Terminology               July 2018
 
+
+6.2.  Informative References
+
+   [MasteringBitcoinOnline]
+              Antonopoulos, A., "Mastering Bitcoin", March 2018,
+              <https://github.com/bitcoinbook/bitcoinbook>.
 
    [RFC4949]  Shirey, R., "Internet Security Glossary, Version 2",
               FYI 36, RFC 4949, DOI 10.17487/RFC4949, August 2007,
@@ -325,6 +331,13 @@ Authors' Addresses
    Email: suga@iij.ad.jp
 
 
+
+
+Nakajima, et al.         Expires January 5, 2019                [Page 6]
+
+Internet-Draft          Crypto Asset Terminology               July 2018
+
+
    Tatsuya HAYASHI
    Lepidum Co. Ltd.
 
@@ -333,4 +346,47 @@ Authors' Addresses
 
 
 
-Nakajima, et al.         Expires January 5, 2019                [Page 6]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nakajima, et al.         Expires January 5, 2019                [Page 7]
