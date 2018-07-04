@@ -1,6 +1,6 @@
-# 
+# draft-nakajima-crypto-asset-terminology
 
-This is the working area for the individual Internet-Draft, "".
+This is the working area for the individual Internet-Draft, "draft-nakajima-crypto-asset-terminology".
 
 * [Editor's Copy](https://VCGTF.github.io/draft-nakajima-crypto-asset-terminology/#go.draft-nakajima-crypto-asset-terminology.html)
 * [Individual Draft](https://tools.ietf.org/html/draft-nakajima-crypto-asset-terminology)
