@@ -136,6 +136,8 @@ fork:
 : Defined in {{MasteringBitcoinOnline}} as "Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the block chain. Typically occurs when two or more miners find blocks at nearly the same time."
 <!-- NEED MODIFICATIONS for explanation of hard fork -->
 
+: Design change of Block data format. "Soft-fork" affect mining software implementation. "Hard-fork" affect not only mining software but also wallet software implementation. Split is sometimes called hard-fork, but Blockchain before specification change and Blockchain after specification change coexist in the future.
+
 genesis block:
 : An initial block on a blockchain. Genesis block may differ to distinguish chains.
 
