@@ -1,6 +1,6 @@
 ---
-title: Terminology for Crypto Asset
-abbrev: Crypto Asset Terminology
+title: Terminology for Cryptoassets
+abbrev: Cryptoassets Terminology
 docname: draft-nakajima-crypto-asset-terminology-latest
 category: info
 
@@ -19,10 +19,10 @@ author:
    organization: Mercari, Inc. R4D
    abbrev: Mercari R4D
    street:
-   - Roppongi Hills Mori Tower 18F
+   - Roppongi Hills Mori Tower 25F
    - 6-10-1 Roppongi
    city: Minato, Tokyo
-   code: '106-6118'
+   code: '106-6125'
    country: JAPAN
    email: nunnun@mercari.com
 -
@@ -82,7 +82,7 @@ This document provides terminology used in crypto asset.
 
 # Introduction
 
-Our goal with this document is to improve our understanding on a set of terms which frequently used in documents which related to crypto asset.
+Our goal with this document is to improve our understanding on a set of terms which frequently used in documents which related to cryptoassets.
 Mutual understanding about terminology may help to reach a consensus on issues we're trying to solve.
 
 # Conventions and Definitions
@@ -305,4 +305,4 @@ None.
 # Acknowledgments
 {:numbered="false"}
 
-Thanks to members of the Virtual Currency Governance Task Force for help and feedback.
+Thanks to members of the Cryptoassets Governance Task Force for help and feedback.
