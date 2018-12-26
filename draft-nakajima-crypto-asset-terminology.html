@@ -279,21 +279,22 @@ ul.toc li {
 <link href="#rfc.section.1" rel="Chapter" title="1 Introduction">
 <link href="#rfc.section.2" rel="Chapter" title="2 Conventions and Definitions">
 <link href="#rfc.section.3" rel="Chapter" title="3 Terms and Definitions">
-<link href="#rfc.section.4" rel="Chapter" title="4 Security Considerations">
-<link href="#rfc.section.5" rel="Chapter" title="5 IANA Considerations">
-<link href="#rfc.references" rel="Chapter" title="6 References">
-<link href="#rfc.references.1" rel="Chapter" title="6.1 Normative References">
-<link href="#rfc.references.2" rel="Chapter" title="6.2 Informative References">
+<link href="#rfc.section.4" rel="Chapter" title="4 Symbols and abbreviated terms">
+<link href="#rfc.section.5" rel="Chapter" title="5 Security Considerations">
+<link href="#rfc.section.6" rel="Chapter" title="6 IANA Considerations">
+<link href="#rfc.references" rel="Chapter" title="7 References">
+<link href="#rfc.references.1" rel="Chapter" title="7.1 Normative References">
+<link href="#rfc.references.2" rel="Chapter" title="7.2 Informative References">
 <link href="#rfc.acknowledgments" rel="Chapter">
 <link href="#rfc.authors" rel="Chapter">
 
 
-  <meta name="generator" content="xml2rfc version 2.9.9 - https://tools.ietf.org/tools/xml2rfc" />
+  <meta name="generator" content="xml2rfc version 2.15.4 - https://tools.ietf.org/tools/xml2rfc" />
   <link rel="schema.dct" href="http://purl.org/dc/terms/" />
 
   <meta name="dct.creator" content="Nakajima, H., Kusunoki, M., Hida, K., Suga, Y., and T. Hayashi" />
   <meta name="dct.identifier" content="urn:ietf:id:draft-nakajima-crypto-asset-terminology-latest" />
-  <meta name="dct.issued" scheme="ISO8601" content="2018-07-04" />
+  <meta name="dct.issued" scheme="ISO8601" content="2018-12-26" />
   <meta name="dct.abstract" content="This document provides terminology used in crypto asset." />
   <meta name="description" content="This document provides terminology used in crypto asset." />
 
@@ -317,7 +318,7 @@ ul.toc li {
 <td class="right">M. Kusunoki</td>
 </tr>
 <tr>
-<td class="left">Expires: January 5, 2019</td>
+<td class="left">Expires: June 29, 2019</td>
 <td class="right">JDD</td>
 </tr>
 <tr>
@@ -346,7 +347,7 @@ ul.toc li {
 </tr>
 <tr>
 <td class="left"></td>
-<td class="right">July 04, 2018</td>
+<td class="right">December 26, 2018</td>
 </tr>
 
     	
@@ -362,7 +363,7 @@ ul.toc li {
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at https://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on January 5, 2019.</p>
+<p>This Internet-Draft will expire on June 29, 2019.</p>
 <h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
 <p>Copyright (c) 2018 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
 <p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
@@ -378,15 +379,17 @@ ul.toc li {
 </li>
 <li>3.   <a href="#rfc.section.3">Terms and Definitions</a>
 </li>
-<li>4.   <a href="#rfc.section.4">Security Considerations</a>
+<li>4.   <a href="#rfc.section.4">Symbols and abbreviated terms</a>
 </li>
-<li>5.   <a href="#rfc.section.5">IANA Considerations</a>
+<li>5.   <a href="#rfc.section.5">Security Considerations</a>
 </li>
-<li>6.   <a href="#rfc.references">References</a>
+<li>6.   <a href="#rfc.section.6">IANA Considerations</a>
 </li>
-<ul><li>6.1.   <a href="#rfc.references.1">Normative References</a>
+<li>7.   <a href="#rfc.references">References</a>
 </li>
-<li>6.2.   <a href="#rfc.references.2">Informative References</a>
+<ul><li>7.1.   <a href="#rfc.references.1">Normative References</a>
+</li>
+<li>7.2.   <a href="#rfc.references.2">Informative References</a>
 </li>
 </ul><li><a href="#rfc.acknowledgments">Acknowledgments</a>
 </li>
@@ -412,6 +415,8 @@ ul.toc li {
 <dl>
 <dt>address:</dt>
 <dd style="margin-left: 8">An identifier to represent a public key in a blockchain network.</dd>
+<dt>administrator:</dt>
+<dd style="margin-left: 8">It is a person who conducts operational maintenance of the system with authority to change system setting. From the viewpoint of mutual checking, there are administrators with different authorities depending on the subjects to be managed.</dd>
 <dt>asymmetric cryptography:</dt>
 <dd style="margin-left: 8">Defined in <a href="#RFC4949" class="xref">[RFC4949]</a> as &#8220;A modern branch of cryptography (popularly known as &#8220;public-key cryptography&#8221;) in which the algorithms use a pair of keys (a public key and a private key) and use a different component of the pair for each of two counterpart cryptographic operations (e.g., encryption and decryption, or signature creation and signature verification). &#8220;</dd>
 <dt>block:</dt>
@@ -435,13 +440,15 @@ ul.toc li {
 <dt>fiat money:</dt>
 <dd style="margin-left: 8">Currency which has been established by government or other authorities.</dd>
 <dt>fork:</dt>
-<dd style="margin-left: 8">Defined in <a href="#MasteringBitcoinOnline" class="xref">[MasteringBitcoinOnline]</a> as &#8220;Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the block chain. Typically occurs when two or more miners find blocks at nearly the same time.&#8221; </dd>
-<dt></dt>
-<dd style="margin-left: 8">Design change of Block data format. &#8220;Soft-fork&#8221; affect mining software implementation. &#8220;Hard-fork&#8221; affect not only mining software but also wallet software implementation. Split is sometimes called hard-fork, but Blockchain before specification change and Blockchain after specification change coexist in the future.</dd>
+<dd style="margin-left: 8">A fork is a branch of a ledger. Ledger branching may occur accidentally or by specification changes.</dd>
+<dt>accidental fork:</dt>
+<dd style="margin-left: 8">An accidental fork is a case where a block is accidentally mined at about the same time, and a plurality of chains coexist temporarily. It occurs on a daily basis and converges to the longest chain by re-org.</dd>
+<dt>soft fork:</dt>
+<dd style="margin-left: 8">A soft fork may influence the implementation of a miner in branches caused by specification change of block chain, but does not affect wallet implementation.</dd>
+<dt>hard fork:</dt>
+<dd style="margin-left: 8">A hard fork is a branch caused by a specification change without forward compatibility of the block chain, which may affect the wallet implementation in addition to the miner.  There is a case where a plurality of chains continue to coexist permanently because there is no consensus between developers regarding the case where the majority of nodes stay in the specification change by following the hard fork, We call it split. Examples of typical splits include the division of Ethereum and Ethereum Classic in the The DAO case of 2016, the division of Bitcoin and Bitcoin Cash in 2017, and so on. The new coin born by division is called a fork coin.</dd>
 <dt>genesis block:</dt>
 <dd style="margin-left: 8">An initial block on a blockchain. Genesis block may differ to distinguish chains.</dd>
-<dt>hard fork:</dt>
-<dd style="margin-left: 8">See: fork</dd>
 <dt>hash value:</dt>
 <dd style="margin-left: 8">Defined in <a href="#RFC4949" class="xref">[RFC4949]</a> as &#8220;The output of a hash function.&#8221;</dd>
 <dt>hash rate:</dt>
@@ -464,6 +471,8 @@ ul.toc li {
 <dd style="margin-left: 8">The movement of value outside of the blockchain</dd>
 <dt>on-chain transaction:</dt>
 <dd style="margin-left: 8">The movement of value on the blockchain</dd>
+<dt>operator:</dt>
+<dd style="margin-left: 8">It is a person who performs routine tasks based on authority as a normal task.</dd>
 <dt>orphan block:</dt>
 <dd style="margin-left: 8">Defined in <a href="#MasteringBitcoinOnline" class="xref">[MasteringBitcoinOnline]</a> as &#8220;Blocks whose parent block has not been processed by the local node, so they can&#8217;t be fully validated yet.&#8221;</dd>
 <dt>permissioned-chain:</dt>
@@ -511,20 +520,47 @@ ul.toc li {
 <dt>validator:</dt>
 <dd style="margin-left: 8">See: validation</dd>
 <dt>wallet:</dt>
-<dd style="margin-left: 8">A set of key pair composed of public key and private key.</dd>
+<dd style="margin-left: 8">A wallet is an implementation that handles a key pair of a public key and a secret key used for transmitting a virtual currency and such a key pair. In this document, the latter is distinguished and called wallet implementation.</dd>
+<dt>hot wallet:</dt>
+<dd style="margin-left: 8">It is a wallet that is online connected to the network, the key is activated, and you can coin out the virtual currency by automatic processing.</dd>
+<dt>cold wallet:</dt>
+<dd style="margin-left: 8">Normally it is disconnected from the network and the key is inactivated and it is a wallet that can not be coined out unless there is an explicit operation by the operator. Frequency of outgoing coins is limited.</dd>
+<dt></dt>
+<dd style="margin-left: 8">Between Hot Wallet and Cold Wallet, there are various intermediate forms such as wallet that is online, but requires manual operation at the time of signing a transaction, wallet that is offline but operation is automated, and warm wallet There are also sometimes called.</dd>
 </dl>
 <h1 id="rfc.section.4">
-<a href="#rfc.section.4">4.</a> <a href="#security-considerations" id="security-considerations">Security Considerations</a>
+<a href="#rfc.section.4">4.</a> <a href="#symbols-and-abbreviated-terms" id="symbols-and-abbreviated-terms">Symbols and abbreviated terms</a>
 </h1>
-<p id="rfc.section.4.p.1">This document defines terminology for crypto asset. Therefore, there is no security considerations.</p>
+<p></p>
+
+<dl>
+<dt>AML</dt>
+<dd style="margin-left: 8">Anti-Money Laundering</dd>
+<dt>API:</dt>
+<dd style="margin-left: 8">Application Programming Interface</dd>
+<dt>CFT:</dt>
+<dd style="margin-left: 8">Counter Financing of Terrorism</dd>
+<dt>DAO:</dt>
+<dd style="margin-left: 8">Distributed Autonomous Organization</dd>
+<dt>DLT:</dt>
+<dd style="margin-left: 8">Distributed Ledger Technologies</dd>
+<dt>HD:</dt>
+<dd style="margin-left: 8">Hierarchy Deterministic (wallet)</dd>
+<dt>PKI:</dt>
+<dd style="margin-left: 8">Public Key Infrastructure</dd>
+</dl>
 <h1 id="rfc.section.5">
-<a href="#rfc.section.5">5.</a> <a href="#iana-considerations" id="iana-considerations">IANA Considerations</a>
+<a href="#rfc.section.5">5.</a> <a href="#security-considerations" id="security-considerations">Security Considerations</a>
 </h1>
-<p id="rfc.section.5.p.1">None.</p>
+<p id="rfc.section.5.p.1">This document defines terminology for crypto asset. Therefore, there is no security considerations.</p>
+<h1 id="rfc.section.6">
+<a href="#rfc.section.6">6.</a> <a href="#iana-considerations" id="iana-considerations">IANA Considerations</a>
+</h1>
+<p id="rfc.section.6.p.1">None.</p>
 <h1 id="rfc.references">
-<a href="#rfc.references">6.</a> References</h1>
+<a href="#rfc.references">7.</a> References</h1>
 <h1 id="rfc.references.1">
-<a href="#rfc.references.1">6.1.</a> Normative References</h1>
+<a href="#rfc.references.1">7.1.</a> Normative References</h1>
 <table><tbody>
 <tr>
 <td class="reference"><b id="RFC2119">[RFC2119]</b></td>
@@ -538,7 +574,7 @@ ul.toc li {
 </tr>
 </tbody></table>
 <h1 id="rfc.references.2">
-<a href="#rfc.references.2">6.2.</a> Informative References</h1>
+<a href="#rfc.references.2">7.2.</a> Informative References</h1>
 <table><tbody>
 <tr>
 <td class="reference"><b id="MasteringBitcoinOnline">[MasteringBitcoinOnline]</b></td>
@@ -587,13 +623,15 @@ ul.toc li {
 	</span>
 	<span class="org vcardline">Japan Digital Design, Inc.</span>
 	<span class="adr">
-	  
+	  <span class="vcardline">Nihonbashi Talk Building</span>
+<span class="vcardline">3-3-5, Nihonbashi-Hongokucho</span>
+
 	  <span class="vcardline">
 		<span class="locality"></span> 
 		<span class="region"></span>
-		<span class="code"></span>
+		<span class="code">103-0021</span>
 	  </span>
-	  <span class="country-name vcardline"></span>
+	  <span class="country-name vcardline">JAPAN</span>
 	</span>
 	<span class="vcardline">EMail: <a href="mailto:masanori.kusunoki@japan-d2.com">masanori.kusunoki@japan-d2.com</a></span>
 
