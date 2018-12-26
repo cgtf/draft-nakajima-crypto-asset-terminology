@@ -30,6 +30,12 @@ author:
    name: Masanori Kusunoki
    organization: Japan Digital Design, Inc.
    abbrev: JDD
+   street:
+   - Nihonbashi Talk Building
+   - 3-3-5, Nihonbashi-Hongokucho
+   City: Chuo-ku, Tokyo
+   code: '103-0021'
+   country: JAPAN
    email: masanori.kusunoki@japan-d2.com
 -
    ins: K. Hida
@@ -91,6 +97,9 @@ when, and only when, they appear in all capitals, as shown here.
 address:
 : An identifier to represent a public key in a blockchain network.
 
+administrator:
+: It is a person who conducts operational maintenance of the system with authority to change system setting. From the viewpoint of mutual checking, there are administrators with different authorities depending on the subjects to be managed.
+
 asymmetric cryptography:
 : Defined in {{RFC4949}} as "A modern branch of cryptography (popularly known as
   "public-key cryptography") in which the algorithms use a pair of keys (a
@@ -133,16 +142,20 @@ fiat money:
 : Currency which has been established by government or other authorities.
 
 fork:
-: Defined in {{MasteringBitcoinOnline}} as "Fork, also known as accidental fork, occurs when two or more blocks have the same block height, forking the block chain. Typically occurs when two or more miners find blocks at nearly the same time."
-<!-- NEED MODIFICATIONS for explanation of hard fork -->
+: A fork is a branch of a ledger. Ledger branching may occur accidentally or by specification changes.
 
-: Design change of Block data format. "Soft-fork" affect mining software implementation. "Hard-fork" affect not only mining software but also wallet software implementation. Split is sometimes called hard-fork, but Blockchain before specification change and Blockchain after specification change coexist in the future.
+accidental fork:
+: An accidental fork is a case where a block is accidentally mined at about the same time, and a plurality of chains coexist temporarily. It occurs on a daily basis and converges to the longest chain by re-org.
+
+soft fork:
+: A soft fork may influence the implementation of a miner in branches caused by specification change of block chain, but does not affect wallet implementation.
+
+hard fork:
+: A hard fork is a branch caused by a specification change without forward compatibility of the block chain, which may affect the wallet implementation in addition to the miner.
+ There is a case where a plurality of chains continue to coexist permanently because there is no consensus between developers regarding the case where the majority of nodes stay in the specification change by following the hard fork, We call it split. Examples of typical splits include the division of Ethereum and Ethereum Classic in the The DAO case of 2016, the division of Bitcoin and Bitcoin Cash in 2017, and so on. The new coin born by division is called a fork coin.
 
 genesis block:
 : An initial block on a blockchain. Genesis block may differ to distinguish chains.
-
-hard fork:
-: See: fork
 
 hash value:
 : Defined in {{RFC4949}} as "The output of a hash function."
@@ -173,6 +186,9 @@ off-chain transaction:
 
 on-chain transaction:
 : The movement of value on the blockchain
+
+operator:
+: It is a person who performs routine tasks based on authority as a normal task.
 
 orphan block:
 : Defined in {{MasteringBitcoinOnline}} as "Blocks whose parent block has not been processed by the local node, so they can’t be fully validated yet."
@@ -243,7 +259,38 @@ validator:
 : See: validation
 
 wallet:
-: A set of key pair composed of public key and private key.
+: A wallet is an implementation that handles a key pair of a public key and a secret key used for transmitting a virtual currency and such a key pair. In this document, the latter is distinguished and called wallet implementation.
+
+hot wallet:
+: It is a wallet that is online connected to the network, the key is activated, and you can coin out the virtual currency by automatic processing.
+
+cold wallet:
+: Normally it is disconnected from the network and the key is inactivated and it is a wallet that can not be coined out unless there is an explicit operation by the operator. Frequency of outgoing coins is limited.
+
+: Between Hot Wallet and Cold Wallet, there are various intermediate forms such as wallet that is online, but requires manual operation at the time of signing a transaction, wallet that is offline but operation is automated, and warm wallet There are also sometimes called.
+
+# Symbols and abbreviated terms
+
+AML
+: Anti-Money Laundering
+
+API:
+: Application Programming Interface
+
+CFT:
+: Counter Financing of Terrorism
+
+DAO:
+: Distributed Autonomous Organization
+
+DLT:
+: Distributed Ledger Technologies
+
+HD:
+: Hierarchy Deterministic (wallet)
+
+PKI:
+: Public Key Infrastructure
 
 # Security Considerations
 
