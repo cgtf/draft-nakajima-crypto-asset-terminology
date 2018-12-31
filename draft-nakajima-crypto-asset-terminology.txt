@@ -5,14 +5,14 @@
 Network Working Group                                        H. Nakajima
 Internet-Draft                                               Mercari R4D
 Intended status: Informational                               M. Kusunoki
-Expires: June 29, 2019                                               JDD
+Expires: July 4, 2019                                                JDD
                                                                  K. Hida
                                                                      JBA
                                                                  Y. Suga
                                               Advanced Security Div, IIJ
                                                               T. Hayashi
                                                                  Lepidum
-                                                       December 26, 2018
+                                                       December 31, 2018
 
 
                       Terminology for Cryptoassets
@@ -20,7 +20,7 @@ Expires: June 29, 2019                                               JDD
 
 Abstract
 
-   This document provides terminology used in crypto asset.
+   This document provides terminology used in cryptoassets.
 
 Status of This Memo
 
@@ -37,7 +37,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on June 29, 2019.
+   This Internet-Draft will expire on July 4, 2019.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Nakajima, et al.          Expires June 29, 2019                 [Page 1]
+Nakajima, et al.          Expires July 4, 2019                  [Page 1]
 
 Internet-Draft          Cryptoassets Terminology           December 2018
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Nakajima, et al.          Expires June 29, 2019                 [Page 2]
+Nakajima, et al.          Expires July 4, 2019                  [Page 2]
 
 Internet-Draft          Cryptoassets Terminology           December 2018
 
@@ -121,14 +121,14 @@ Internet-Draft          Cryptoassets Terminology           December 2018
       blockchain which contains a cryptographic hash value of previous
       block.
 
-   blockchain:  A digital ledger about transactions for crypto assets.
+   blockchain:  A digital ledger about transactions for cryptoassets.
 
    confirmation:  (For transactions,) checking correctness of a
       transaction in the mainchain.
 
    consensus:  Coincidence the way of thinking.
 
-   crypto assets:  Cryptographically guaranteed value.
+   cryptoassets:  Cryptographically guaranteed value.
 
    deterministic wallet:  See: wallet
 
@@ -137,7 +137,7 @@ Internet-Draft          Cryptoassets Terminology           December 2018
       a way that any recipient of the data can use the signature to
       verify the data's origin and integrity."
 
-   distributed ledger:  A distributed database about crypto assets with
+   distributed ledger:  A distributed database about cryptoassets with
       agreed processed.
 
    double spending:  Defined in [MasteringBitcoinOnline] as "result of
@@ -165,7 +165,7 @@ Internet-Draft          Cryptoassets Terminology           December 2018
 
 
 
-Nakajima, et al.          Expires June 29, 2019                 [Page 3]
+Nakajima, et al.          Expires July 4, 2019                  [Page 3]
 
 Internet-Draft          Cryptoassets Terminology           December 2018
 
@@ -221,7 +221,7 @@ Internet-Draft          Cryptoassets Terminology           December 2018
 
 
 
-Nakajima, et al.          Expires June 29, 2019                 [Page 4]
+Nakajima, et al.          Expires July 4, 2019                  [Page 4]
 
 Internet-Draft          Cryptoassets Terminology           December 2018
 
@@ -277,7 +277,7 @@ Internet-Draft          Cryptoassets Terminology           December 2018
 
 
 
-Nakajima, et al.          Expires June 29, 2019                 [Page 5]
+Nakajima, et al.          Expires July 4, 2019                  [Page 5]
 
 Internet-Draft          Cryptoassets Terminology           December 2018
 
@@ -318,7 +318,7 @@ Internet-Draft          Cryptoassets Terminology           December 2018
 
 5.  Security Considerations
 
-   This document defines terminology for crypto asset.  Therefore, there
+   This document defines terminology for cryptoassets.  Therefore, there
    is no security considerations.
 
 6.  IANA Considerations
@@ -333,7 +333,7 @@ Internet-Draft          Cryptoassets Terminology           December 2018
 
 
 
-Nakajima, et al.          Expires June 29, 2019                 [Page 6]
+Nakajima, et al.          Expires July 4, 2019                  [Page 6]
 
 Internet-Draft          Cryptoassets Terminology           December 2018
 
@@ -359,10 +359,14 @@ Internet-Draft          Cryptoassets Terminology           December 2018
               FYI 36, RFC 4949, DOI 10.17487/RFC4949, August 2007,
               <https://www.rfc-editor.org/info/rfc4949>.
 
+7.3.  URIs
+
+   [1] https://vcgtf.github.io/
+
 Acknowledgments
 
-   Thanks to members of the Cryptoassets Governance Task Force for help
-   and feedback.
+   Thanks to members of the Cryptoassets Governance Task Force [1] for
+   help and feedback.
 
 Authors' Addresses
 
@@ -376,6 +380,20 @@ Authors' Addresses
    Email: nunnun@mercari.com
 
 
+
+
+
+
+
+
+
+
+
+Nakajima, et al.          Expires July 4, 2019                  [Page 7]
+
+Internet-Draft          Cryptoassets Terminology           December 2018
+
+
    Masanori Kusunoki
    Japan Digital Design, Inc.
    Nihonbashi Talk Building
@@ -384,14 +402,6 @@ Authors' Addresses
    JAPAN
 
    Email: masanori.kusunoki@japan-d2.com
-
-
-
-
-
-Nakajima, et al.          Expires June 29, 2019                 [Page 7]
-
-Internet-Draft          Cryptoassets Terminology           December 2018
 
 
    Keiichi Hida
@@ -435,14 +445,4 @@ Internet-Draft          Cryptoassets Terminology           December 2018
 
 
 
-
-
-
-
-
-
-
-
-
-
-Nakajima, et al.          Expires June 29, 2019                 [Page 8]
+Nakajima, et al.          Expires July 4, 2019                  [Page 8]
