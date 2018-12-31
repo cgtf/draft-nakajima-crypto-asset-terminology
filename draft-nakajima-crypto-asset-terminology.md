@@ -76,7 +76,7 @@ informative:
 
 --- abstract
 
-This document provides terminology used in crypto asset.
+This document provides terminology used in cryptoassets.
 
 --- middle
 
@@ -111,7 +111,7 @@ block:
 : A basic unit of the blockchain. A set of transactions on a blockchain which contains a cryptographic hash value of previous block.
 
 blockchain:
-: A digital ledger about transactions for crypto assets.
+: A digital ledger about transactions for cryptoassets.
 <!-- : One of a method of distributed ledgers which confirms  -->
 
 confirmation:
@@ -120,7 +120,7 @@ confirmation:
 consensus:
 : Coincidence the way of thinking.
 
-crypto assets:
+cryptoassets:
 : Cryptographically guaranteed value.
 
 deterministic wallet:
@@ -133,7 +133,7 @@ the data can use the signature to verify the data's origin and
 integrity."
 
 distributed ledger:
-: A distributed database about crypto assets with agreed processed.
+: A distributed database about cryptoassets with agreed processed.
 
 double spending:
 : Defined in {{MasteringBitcoinOnline}} as "result of successfully spending some money more than once."
@@ -294,7 +294,7 @@ PKI:
 
 # Security Considerations
 
-This document defines terminology for crypto asset. Therefore, there is no security considerations.
+This document defines terminology for cryptoassets. Therefore, there is no security considerations.
 
 # IANA Considerations
 
@@ -305,4 +305,4 @@ None.
 # Acknowledgments
 {:numbered="false"}
 
-Thanks to members of the Cryptoassets Governance Task Force for help and feedback.
+Thanks to members of the [Cryptoassets Governance Task Force](https://vcgtf.github.io/) for help and feedback.
