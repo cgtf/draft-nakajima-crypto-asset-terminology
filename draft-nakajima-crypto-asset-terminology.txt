@@ -5,14 +5,14 @@
 Network Working Group                                        H. Nakajima
 Internet-Draft                                               Mercari R4D
 Intended status: Informational                               M. Kusunoki
-Expires: July 14, 2019                                               JDD
+Expires: July 18, 2019                                               JDD
                                                                  K. Hida
                                                                      JBA
                                                                  Y. Suga
                                               Advanced Security Div, IIJ
                                                               T. Hayashi
                                                                  Lepidum
-                                                        January 10, 2019
+                                                        January 14, 2019
 
 
                       Terminology for Cryptoassets
@@ -37,7 +37,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on July 14, 2019.
+   This Internet-Draft will expire on July 18, 2019.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Nakajima, et al.          Expires July 14, 2019                 [Page 1]
+Nakajima, et al.          Expires July 18, 2019                 [Page 1]
 
 Internet-Draft          Cryptoassets Terminology            January 2019
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Nakajima, et al.          Expires July 14, 2019                 [Page 2]
+Nakajima, et al.          Expires July 18, 2019                 [Page 2]
 
 Internet-Draft          Cryptoassets Terminology            January 2019
 
@@ -165,7 +165,7 @@ Internet-Draft          Cryptoassets Terminology            January 2019
 
 
 
-Nakajima, et al.          Expires July 14, 2019                 [Page 3]
+Nakajima, et al.          Expires July 18, 2019                 [Page 3]
 
 Internet-Draft          Cryptoassets Terminology            January 2019
 
@@ -221,7 +221,7 @@ Internet-Draft          Cryptoassets Terminology            January 2019
 
 
 
-Nakajima, et al.          Expires July 14, 2019                 [Page 4]
+Nakajima, et al.          Expires July 18, 2019                 [Page 4]
 
 Internet-Draft          Cryptoassets Terminology            January 2019
 
@@ -277,7 +277,7 @@ Internet-Draft          Cryptoassets Terminology            January 2019
 
 
 
-Nakajima, et al.          Expires July 14, 2019                 [Page 5]
+Nakajima, et al.          Expires July 18, 2019                 [Page 5]
 
 Internet-Draft          Cryptoassets Terminology            January 2019
 
@@ -333,7 +333,7 @@ Internet-Draft          Cryptoassets Terminology            January 2019
 
 
 
-Nakajima, et al.          Expires July 14, 2019                 [Page 6]
+Nakajima, et al.          Expires July 18, 2019                 [Page 6]
 
 Internet-Draft          Cryptoassets Terminology            January 2019
 
@@ -389,7 +389,7 @@ Authors' Addresses
 
 
 
-Nakajima, et al.          Expires July 14, 2019                 [Page 7]
+Nakajima, et al.          Expires July 18, 2019                 [Page 7]
 
 Internet-Draft          Cryptoassets Terminology            January 2019
 
@@ -445,4 +445,4 @@ Internet-Draft          Cryptoassets Terminology            January 2019
 
 
 
-Nakajima, et al.          Expires July 14, 2019                 [Page 8]
+Nakajima, et al.          Expires July 18, 2019                 [Page 8]
