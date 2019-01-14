@@ -2,9 +2,9 @@
 
 This is the working area for the individual Internet-Draft, "draft-nakajima-crypto-asset-terminology".
 
-* [Editor's Copy](https://VCGTF.github.io/draft-nakajima-crypto-asset-terminology/#go.draft-nakajima-crypto-asset-terminology.html)
+* [Editor's Copy](https://cgtf.github.io/draft-nakajima-crypto-asset-terminology/#go.draft-nakajima-crypto-asset-terminology.html)
 * [Individual Draft](https://tools.ietf.org/html/draft-nakajima-crypto-asset-terminology)
-* [Compare Editor's Copy to Individual Draft](https://VCGTF.github.io/draft-nakajima-crypto-asset-terminology/#go.draft-nakajima-crypto-asset-terminology.diff)
+* [Compare Editor's Copy to Individual Draft](https://cgtf.github.io/draft-nakajima-crypto-asset-terminology/#go.draft-nakajima-crypto-asset-terminology.diff)
 
 ## Building the Draft
 
@@ -21,4 +21,4 @@ This requires that you have the necessary software installed.  See
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/VCGTF/draft-nakajima-crypto-asset-terminology/blob/master/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/cgtf/draft-nakajima-crypto-asset-terminology/blob/master/CONTRIBUTING.md).
