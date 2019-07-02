@@ -5,14 +5,14 @@
 Network Working Group                                        H. Nakajima
 Internet-Draft                                               Mercari R4D
 Intended status: Informational                               M. Kusunoki
-Expires: July 18, 2019                                               JDD
+Expires: January 3, 2020                                             JDD
                                                                  K. Hida
                                                                      JBA
                                                                  Y. Suga
                                               Advanced Security Div, IIJ
                                                               T. Hayashi
                                                                  Lepidum
-                                                        January 14, 2019
+                                                           July 02, 2019
 
 
                       Terminology for Cryptoassets
@@ -37,7 +37,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on July 18, 2019.
+   This Internet-Draft will expire on January 3, 2020.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Nakajima, et al.          Expires July 18, 2019                 [Page 1]
+Nakajima, et al.         Expires January 3, 2020                [Page 1]
 
-Internet-Draft          Cryptoassets Terminology            January 2019
+Internet-Draft          Cryptoassets Terminology               July 2019
 
 
    include Simplified BSD License text as described in Section 4.e of
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Nakajima, et al.          Expires July 18, 2019                 [Page 2]
+Nakajima, et al.         Expires January 3, 2020                [Page 2]
 
-Internet-Draft          Cryptoassets Terminology            January 2019
+Internet-Draft          Cryptoassets Terminology               July 2019
 
 
       two counterpart cryptographic operations (e.g., encryption and
@@ -165,9 +165,9 @@ Internet-Draft          Cryptoassets Terminology            January 2019
 
 
 
-Nakajima, et al.          Expires July 18, 2019                 [Page 3]
+Nakajima, et al.         Expires January 3, 2020                [Page 3]
 
-Internet-Draft          Cryptoassets Terminology            January 2019
+Internet-Draft          Cryptoassets Terminology               July 2019
 
 
       because there is no consensus between developers regarding the
@@ -221,9 +221,9 @@ Internet-Draft          Cryptoassets Terminology            January 2019
 
 
 
-Nakajima, et al.          Expires July 18, 2019                 [Page 4]
+Nakajima, et al.         Expires January 3, 2020                [Page 4]
 
-Internet-Draft          Cryptoassets Terminology            January 2019
+Internet-Draft          Cryptoassets Terminology               July 2019
 
 
    public-chain:  An open blockchain that anyone can retrieve all of
@@ -273,20 +273,20 @@ Internet-Draft          Cryptoassets Terminology            January 2019
    validator:  See: validation
 
    wallet:  A wallet is an implementation that handles a key pair of a
-      public key and a secret key used for transmitting a virtual
+      public key and a secret key used for transmitting a crypto assets
 
 
 
-Nakajima, et al.          Expires July 18, 2019                 [Page 5]
+Nakajima, et al.         Expires January 3, 2020                [Page 5]
 
-Internet-Draft          Cryptoassets Terminology            January 2019
+Internet-Draft          Cryptoassets Terminology               July 2019
 
 
-      currency and such a key pair.  In this document, the latter is
+      and such a key pair.  In this document, the latter is
       distinguished and called wallet implementation.
 
    hot wallet:  It is a wallet that is online connected to the network,
-      the key is activated, and you can coin out the virtual currency by
+      the key is activated, and you can coin out the crypto assets by
       automatic processing.
 
    cold wallet:  Normally it is disconnected from the network and the
@@ -333,9 +333,9 @@ Internet-Draft          Cryptoassets Terminology            January 2019
 
 
 
-Nakajima, et al.          Expires July 18, 2019                 [Page 6]
+Nakajima, et al.         Expires January 3, 2020                [Page 6]
 
-Internet-Draft          Cryptoassets Terminology            January 2019
+Internet-Draft          Cryptoassets Terminology               July 2019
 
 
 7.1.  Normative References
@@ -372,7 +372,7 @@ Authors' Addresses
 
    Hirotaka Nakajima
    Mercari, Inc. R4D
-   Roppongi Hills Mori Tower 25F
+   Roppongi Hills Mori Tower 21F
    6-10-1 Roppongi
    Minato, Tokyo  106-6125
    JAPAN
@@ -389,9 +389,9 @@ Authors' Addresses
 
 
 
-Nakajima, et al.          Expires July 18, 2019                 [Page 7]
+Nakajima, et al.         Expires January 3, 2020                [Page 7]
 
-Internet-Draft          Cryptoassets Terminology            January 2019
+Internet-Draft          Cryptoassets Terminology               July 2019
 
 
    Masanori Kusunoki
@@ -445,4 +445,4 @@ Internet-Draft          Cryptoassets Terminology            January 2019
 
 
 
-Nakajima, et al.          Expires July 18, 2019                 [Page 8]
+Nakajima, et al.         Expires January 3, 2020                [Page 8]
