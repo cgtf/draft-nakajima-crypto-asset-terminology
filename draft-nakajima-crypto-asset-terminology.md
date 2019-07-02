@@ -19,7 +19,7 @@ author:
    organization: Mercari, Inc. R4D
    abbrev: Mercari R4D
    street:
-   - Roppongi Hills Mori Tower 25F
+   - Roppongi Hills Mori Tower 21F
    - 6-10-1 Roppongi
    city: Minato, Tokyo
    code: '106-6125'
@@ -259,10 +259,10 @@ validator:
 : See: validation
 
 wallet:
-: A wallet is an implementation that handles a key pair of a public key and a secret key used for transmitting a virtual currency and such a key pair. In this document, the latter is distinguished and called wallet implementation.
+: A wallet is an implementation that handles a key pair of a public key and a secret key used for transmitting a crypto assets and such a key pair. In this document, the latter is distinguished and called wallet implementation.
 
 hot wallet:
-: It is a wallet that is online connected to the network, the key is activated, and you can coin out the virtual currency by automatic processing.
+: It is a wallet that is online connected to the network, the key is activated, and you can coin out the crypto assets by automatic processing.
 
 cold wallet:
 : Normally it is disconnected from the network and the key is inactivated and it is a wallet that can not be coined out unless there is an explicit operation by the operator. Frequency of outgoing coins is limited.
